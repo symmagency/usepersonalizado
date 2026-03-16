@@ -1084,7 +1084,7 @@ ul.drop-login li:last-child {
 /* Listagem */
 
 .listagem .span3 .imagem-produto, .listagem .produtos-carrossel[data-produtos-linha="4"] .imagem-produto {
-    height: 280px;
+    height: 300px;
 }
 
 .listagem .preco-produto .preco-a-partir strong {
@@ -1365,8 +1365,9 @@ div#categoriasListagem {
 }
 
 #listagemProdutos {
-    max-width: 1140px;
+    max-width: 100%;
     margin: 0 auto;
+    padding: 0 60px;
 }
 
 /* Newsletter Vitrine */
