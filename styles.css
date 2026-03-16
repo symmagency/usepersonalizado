@@ -189,9 +189,9 @@ a.mostrarmais > ul {
 }
 
 #cabecalho .conteiner {
-    padding: 0;
     position: relative;
-    max-width: 1300px;
+    max-width: 100%;
+    padding: 0 40px;
 }
 
 .conteudo-topo .inferior {
@@ -200,6 +200,11 @@ a.mostrarmais > ul {
     align-items: center;
     justify-content: center;
     gap: 10px;
+}
+
+#cabecalho.logo-centro .conteudo-topo:nth-child(3) .inferior .span12 {
+    display: flex;
+    justify-content: flex-end;
 }
 
 #cabecalho > .conteiner > .row-fluid {
@@ -4654,7 +4659,7 @@ li.logado-sair a {
 }
 
 .tarja-responsiva .conteiner {
-    max-width: 1300px;
+    max-width: 100%;
 }
 
 .tarja-carrossel li > span {
