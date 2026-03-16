@@ -3770,6 +3770,7 @@ background: none;
 
 #cabecalho .conteiner {
     text-align: center;
+    padding: 0;
 }
 
 .cat {
@@ -4698,10 +4699,6 @@ li.logado-sair a {
 
 /* Imagens produto e vimeo */
 
-#listagemProdutos {
-    max-width: 100%;
-}
-
 .listagem .span3 .imagem-produto, .listagem .produtos-carrossel[data-produtos-linha="4"] .imagem-produto {
     height: 400px;
 }
@@ -4781,6 +4778,10 @@ li.logado-sair a {
 }
 
 @media screen and (max-width: 768px) {
+
+    #listagemProdutos {
+        padding: 0;
+    }
 	
 	.video-wrapper {
     height: 280px;
