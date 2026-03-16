@@ -49,12 +49,12 @@ button,
     --texto-botao-ativo-variacao: #ffffff;
 
     /* Cores gerais */
-    --cor-da-marca: #4a585b;
+    --cor-da-marca: #000;
     --texto-branco: #ffffff;
     --cor-de-borda: #D7D9DE;
     --cinza-claro: #F5F5F5;
     --cinza: #777D8B;
-    --preto: #4a585b;
+    --preto: #000;
     --branco: #ffffff;
     --cor-de-link: #000;
 
@@ -4642,7 +4642,7 @@ li.logado-sair a {
     padding: 15px;
     box-sizing: border-box;
     text-align: left;
-    background: var(--cinza-claro);
+    background: transparent;
     display: flex!important;
     justify-content: center;
     align-items: center;
