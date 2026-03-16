@@ -5124,3 +5124,9 @@ body {
     }
     
   }
+
+/* Ajustes no código da CN */
+
+.pagina-produto .cn-porta-joias {
+    display: none !important;
+}
