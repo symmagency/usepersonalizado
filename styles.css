@@ -279,6 +279,10 @@ a.mostrarmais > ul {
 .login-top {
     display: flex;
     align-items: center;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    justify-content: center;
 }
 
 .login-top .btn-group+.drop-login {
@@ -320,7 +324,6 @@ a.mostrarmais > ul {
     display: block;
     z-index: 1000;
     background: url(https://cdn.awsli.com.br/2205/2205312/arquivos/user.svg) no-repeat center;
-    margin-right: 8px;
 }
 
 .atd-top {
@@ -396,12 +399,16 @@ ul.drop-login, ul.drop-atd, .login-top .dropdown-menu {
     position: absolute;
     left: 0;
     background: #fff;
-    top: 46px;
+    top: 40px;
     padding: 10px 20px 20px;
     text-align: left;
     margin: 0;
     transition: all .2s;
     box-shadow: 0;
+    display: none;
+}
+
+.conteudo-topo .inferior:before, .conteudo-topo .inferior:after {
     display: none;
 }
 
@@ -550,7 +557,7 @@ ul.drop-login li:last-child {
 .carrinho {
     text-align: center;
     position: relative;
-    padding: 11px 0;
+    padding: 0;
     background: none;
     border: 0;
 }
@@ -587,10 +594,13 @@ ul.drop-login li:last-child {
     line-height: 16px;
     font-weight: bold;
     border-radius: 20px;
-    top: 4px;
-    position: relative;
-    left: -20px;
-    display: block!important;
+    position: absolute;
+    left: auto;
+    display: block !important;
+    bottom: 0;
+    top: auto;
+    right: auto;
+    margin: 0;
 }
 
 .carrinho > a {
@@ -600,8 +610,8 @@ ul.drop-login li:last-child {
 }
 
 .conteudo-topo .inferior .span4.hidden-phone {
-    width: 60px;
-    height: 46px;
+    width: 40px;
+    height: 40px;
     text-align: center;
     margin: 0;
     display: flex;
@@ -675,10 +685,12 @@ ul.drop-login li:last-child {
 /* Busca */
 
 .conteudo-topo .inferior .span8.busca-mobile {
-    width: 54%;
+    width: 100%;
     margin-left: 0%;
-    margin-right: 2%;
+    margin-right: 0;
     transition: all .4s;
+    box-sizing: border-box;
+    flex: 1;
 }
 
 #cabecalho.scroll .conteudo-topo .inferior .span8.busca-mobile {
