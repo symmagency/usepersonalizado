@@ -67,7 +67,7 @@ body {
 }
 
 body.pagina-inicial {
-    padding-top: 186px;
+    padding-top: 157px;
 }
 
 a {
@@ -956,7 +956,7 @@ ul.drop-login li:last-child {
 
 .secao-banners .conteiner {
     padding: 0;
-    max-width: 1300px;
+    max-width: 100%;
 }
 
 .flexslider {
