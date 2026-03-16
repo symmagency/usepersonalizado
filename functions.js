@@ -73,7 +73,6 @@ $(document).ready(function(){
     
       $('.conteudo-topo .inferior .span8.busca-mobile').after(
         '<div class="login-top">'+
-        '<span class="login-txt">Acessar<strong>Minha conta</strong></span>'+
         '<ul class="drop-login">'+
           '<div class="append-login">'+
             '<li><a href="../conta/pedido/listar">Meus Pedidos</a></li>'+
