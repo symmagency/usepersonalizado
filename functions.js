@@ -350,5 +350,54 @@ $(document).ready(function(){
     
     },500)
     
+
+
+    // Tarja responsiva
+
+    $('.secao-banners').after(`
+        <div class="tarja-responsiva">
+            <div class="conteiner">
+                <ul class="tarja-carrossel">
+                    
+                </ul>
+            </div>
+        </div>`);
+        
+      var iconeTarjaUm = "https://cdn.awsli.com.br/2089/2089002/arquivos/tarja-truck.svg" //link da imagem do ícone 
+      var tituloTarjaUm = "Frete grátis R$ 199 SP " //Escreva o titulo 
+      var textoTarjaUm = "e R$ 599 demais regiões " //Escreva o texto 
+        
+        var iconeTarjaDois = "https://cdn.awsli.com.br/2089/2089002/arquivos/tarja-cartao.svg" //link da imagem do ícone
+        var tituloTarjaDois = "Parcele em até" //Escreva o titulo
+        var textoTarjaDois = "4x sem juros no cartão" //Escreva o texto
+        
+        var iconeTarjaTres = "https://cdn.awsli.com.br/2089/2089002/arquivos/tarja-qr.svg" //link da imagem do ícone
+        var tituloTarjaTres = "Ganhe 5% de desconto" //Escreva o titulo
+        var textoTarjaTres = "pagando com PIX" //Escreva o texto
+        
+        var iconeTarjaQuatro = "https://cdn.awsli.com.br/2089/2089002/arquivos/tarja-cadeado.svg" //link da imagem do ícone
+        var tituloTarjaQuatro = "Compra 100% segura" //Escreva o titulo
+        var textoTarjaQuatro = "com criptografia SSL" //Escreva o texto
+        
+        $('.tarja-carrossel').append('<li><img src="'+ iconeTarjaUm +'"/><span><strong class="titulo-tarja">'+ tituloTarjaUm +'</strong><span class="texto-tarja">'+ textoTarjaUm +'</span></span></li>');
+        $('.tarja-carrossel').append('<li><img src="'+ iconeTarjaDois +'"/><span><strong class="titulo-tarja">'+ tituloTarjaDois +'</strong><span class="texto-tarja">'+ textoTarjaDois +'</span></span></li>');
+        $('.tarja-carrossel').append('<li><img src="'+ iconeTarjaTres +'"/><span><strong class="titulo-tarja">'+ tituloTarjaTres +'</strong><span class="texto-tarja">'+ textoTarjaTres +'</span></span></li>');
+        $('.tarja-carrossel').append('<li><img src="'+ iconeTarjaQuatro +'"/><span><strong class="titulo-tarja">'+ tituloTarjaQuatro +'</strong><span class="texto-tarja">'+ textoTarjaQuatro +'</span></span></li>');
+    
+      var tam = $(window).width();
+      
+      if (tam <= 768 ){
+    
+        $('.tarja-carrossel').slick({
+          dots: false,
+          infinite: true,
+          speed: 300,
+          slidesToShow: 1,
+          autoplay: true,
+          adaptiveHeight: true
+        });
+        
+    }
+    
     
     });

@@ -4624,3 +4624,67 @@ li.logado-sair a {
     }
 
 }
+
+/* tarja responsivo */
+
+.tarja-carrossel {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tarja-carrossel li {
+    width: 25%;
+    margin-right: 10px;
+    padding: 15px;
+    box-sizing: border-box;
+    text-align: left;
+    background: var(--cinza-claro);
+    display: flex!important;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0px;
+}
+
+.tarja-carrossel li:last-child {
+    margin-right: 0;
+}
+
+.tarja-responsiva .conteiner {
+    max-width: 1300px;
+}
+
+.tarja-carrossel li > span {
+    margin-left: 20px;
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--preto);
+}
+
+.tarja-carrossel li > span > strong {
+    display: block;
+    font-weight: 500;
+}
+
+@media screen and (max-width: 768px) {
+    .tarja-responsiva {
+        width: 100%;
+        overflow: hidden;
+        overflow-x: scroll;
+    }
+
+    .tarja-carrossel {
+        width: 100%;
+        margin-bottom: 10px;
+        margin-top: 20px;
+    }
+    
+    .tarja-carrossel li {
+        margin: 0;
+    }
+    
+    .tarja-carrossel > button {
+        display: none !important;
+    }
+}
