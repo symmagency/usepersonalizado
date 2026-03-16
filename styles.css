@@ -611,6 +611,7 @@ ul.drop-login li:last-child {
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
 }
 
 .conteudo-topo .inferior .span4.hidden-phone {
@@ -779,7 +780,7 @@ ul.drop-login li:last-child {
     left: 4px;
 }
 #cabecalho.logo-centro .carrinho>a strong {
-    left: -17px;
+    left: 8px;
 }
 
 #cabecalho.logo-centro ul.drop-login, #cabecalho.logo-centro ul.drop-atd {
