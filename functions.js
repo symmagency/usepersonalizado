@@ -399,5 +399,111 @@ $(document).ready(function(){
         
     }
     
+    $(document).ready(function(){
+    
+        // LISTAGEM
+       $('.listagem .imagem-produto img').each(function () {
+           var $img = $(this);
+           var src = $img.attr('src');
+           if (!src) return;
+   
+           var newSrc = src.replace('/300x300/', '/512x512/');
+           if (newSrc !== src) {
+               $img.attr('src', newSrc);
+   
+               var dataSrc = $img.attr('data-src');
+               if (dataSrc) {
+                   $img.attr('data-src', dataSrc.replace('/300x300/', '/512x512/'));
+               }
+           }
+       });
+      
+      $(function () {
+   
+       /* =========================
+        🎬 VIDEOS EDITÁVEIS (VIMEO)
+     ==========================*/
+       const videosShorts = [
+           '1171022613',
+           '1171022599',
+           '1171022586',
+           '1171094486',
+           '1171094379',
+           '1171022586'
+       ];
+   
+       /* =========================
+        🧱 MONTA HTML DINÂMICO
+     ==========================*/
+   
+       let slides = '';
+   
+       videosShorts.forEach((id) => {
+           slides += `
+         <div class="depoimento-item">
+           <div class="video-wrapper">
+             <iframe
+               src="https://player.vimeo.com/video/${id}?autopause=0&muted=0&title=0&byline=0&portrait=0&amp;loop=1"
+               frameborder="0"
+               allow="autoplay; fullscreen; picture-in-picture"
+               allowfullscreen>
+             </iframe>
+           </div>
+         </div>
+       `;
+       });
+   
+       const htmlSlider = `
+       <section class="depoimentos-video">
+         <div class="container">
+           <h2>Use personalizado em vídeo</h2>
+           <p>Conheça nossos produtos.</p>
+   
+           <div class="slider-depoimentos">
+             ${slides}
+           </div>
+         </div>
+       </section>
+     `;
+   
+       /* =========================
+        📍 INSERE NO DOM
+     ==========================*/
+   
+       $('.pagina-inicial .vitrine-20616020+ul').after(htmlSlider);
+   
+       /* =========================
+        🎯 INICIA SLICK
+     ==========================*/
+   
+       $('.slider-depoimentos').slick({
+           slidesToShow: 5,
+           slidesToScroll: 1,
+           arrows: true,
+           dots: false,
+           infinite: true,
+           adaptiveHeight: false,
+           draggable: true,
+           responsive: [
+               {
+                   breakpoint: 768,
+                   settings: { slidesToShow: 2 },
+               },
+           ],
+       });
+   
+       /* =========================
+        🧠 PAUSA VÍDEOS AO TROCAR
+     ==========================*/
+   
+       $('.slider-depoimentos').on('beforeChange', function () {
+           $('.slider-depoimentos iframe').each(function () {
+               this.contentWindow.postMessage('{"method":"pause"}', '*');
+           });
+       });
+   
+   });
+       
+   });
     
     });
