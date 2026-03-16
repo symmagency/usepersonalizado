@@ -26,8 +26,8 @@ button,
     /* Cores do cabeçalho */
     --fundo-cabecalho: #f9f9f9;
     --texto-cabecalho: #4a585b;
-    --fundo-menu-superior: #f9f9f9;
-    --texto-menu-superior: #4a585b;
+    --fundo-menu-superior: #000;
+    --texto-menu-superior: #fff;
 
     /* Cores barra de newsletter */
     --fundo-newsletter: #181818;
@@ -690,7 +690,7 @@ ul.drop-login li:last-child {
     margin-right: 0;
     transition: all .4s;
     box-sizing: border-box;
-    flex: 1;
+    flex: 1;    
 }
 
 #cabecalho.scroll .conteudo-topo .inferior .span8.busca-mobile {
