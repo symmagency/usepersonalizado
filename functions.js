@@ -28,7 +28,6 @@ $(document).ready(function(){
     
         $('#cabecalho.logo-centro .row-fluid .conteudo-topo:last-child .inferior .span12').prepend(
             '<div class="login-top">'+
-            '<span class="login-txt">Acessar<strong>Minha conta</strong></span>'+
             '<ul class="drop-login">'+
               '<div class="append-login">'+
                 '<li><a href="../conta/pedido/listar">Meus Pedidos</a></li>'+
