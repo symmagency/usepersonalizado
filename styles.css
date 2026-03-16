@@ -4805,3 +4805,321 @@ li.logado-sair a {
 .slider-depoimentos .depoimento-item:hover iframe {
   pointer-events: auto;
 }
+
+/* MENU MOBILE 2.0 */
+
+body {
+    --corLinkPrincipal: #000;
+    --corLinks: #777D8B;
+    --corLinksNivelTres: #ccc;
+    --backgroundMenuLateral: #F2F2F2;
+    --botaoFecharMenu: #bb0000;
+    --botaoFecharMenuCorX: #ffffff;
+    --corIconeMenu: #000000;
+    
+    --srcAngleRight:  url("https://cdn.awsli.com.br/1994/1994497/arquivos/angle-right-solid.svg");;
+    --srcAngleDown:   url("https://cdn.awsli.com.br/1994/1994497/arquivos/angle-down-solid.svg");;
+    --srcSigninIcon:  url("https://cdn.awsli.com.br/1994/1994497/arquivos/login.svg"); 
+    --srcSignupIcon:  url("https://cdn.awsli.com.br/1994/1994497/arquivos/signup.svg");
+    --srcSignoutIcon: url("https://cdn.awsli.com.br/1994/1994497/arquivos/signout.svg");
+    --srcXMarkIcon:   url("https://cdn.awsli.com.br/1994/1994497/arquivos/xmark-mobile.svg");
+  }
+  
+  @media (max-width: 767.98px) {
+    #cabecalho {
+      position: absolute !important;
+      z-index: auto !important;
+    }
+    #cabecalho .atalhos-mobile {
+      display: block !important;
+    }
+    #cabecalho .atalhos-mobile ul {
+      display: flex;
+      justify-content: flex-end;
+    }
+    #cabecalho .atalhos-mobile ul li {
+      float: none;
+      margin: 0;
+    }
+    #cabecalho .atalhos-mobile ul li:first-child {
+      display: flex;
+      margin-right: auto;
+    }
+    #cabecalho .atalhos-mobile ul li.fundo-principal {
+      order: 3;
+    }
+    #cabecalho .atalhos-mobile ul li.menu-button {
+      display: flex;
+      align-items: center;
+    }
+    #cabecalho .atalhos-mobile ul li.menu-button a {
+      top: 0;
+    }
+    #cabecalho .atalhos-mobile ul li.menu-button a svg * {
+      color: var(--corIconeMenu);
+    }
+  
+    .busca {
+      margin: 0;
+    }
+    .overlay-menu {
+        content: "";
+        display: none;
+        background: rgba(0, 0, 0, 0.7);
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 999;
+    }
+ 
+  
+    .menu.superior {
+      position: relative;
+    }
+    
+    .signin-menu-superior {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 15px;
+      border-style: solid !important;
+      padding-bottom: 30px !important;
+    }
+    
+    .signin-link {
+        text-decoration: none;
+        display: flex !important;
+    }
+     .signout-link {
+        text-decoration: none;
+        display: flex !important;
+    }
+    
+    .signin-icon {
+      display: flex !important;
+      background-image: var(--srcSigninIcon);
+      background-repeat: no-repeat;
+      background-position: center;
+      width: 20px !important;
+      height: 20px !important;
+      margin-right: 5px;
+      color: #777D8B;
+      margin-left: 0 !important;
+      background-color: var(--backgroundMenuLateral);
+    }
+     .signup-menu-superior {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 15px;
+      border-style: solid !important;
+      border-color: #D7D9DE;
+      padding-bottom: 20px !important;
+    }
+     .signout-menu-superior {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 15px;
+      border-style: solid !important;
+      border-color: #D7D9DE;
+      padding-bottom: 20px !important;
+    }
+    .signout-icon-menu {
+      display: flex !important;
+      background-image: var(--srcSignoutIcon);
+      background-repeat: no-repeat;
+      background-position: center;
+      width: 20px !important;
+      height: 20px !important;
+      margin-right: 5px;
+      color: #777D8B;
+      margin-left: 0 !important;
+      background-color: var(--backgroundMenuLateral);
+    }
+      
+    .signup-link {
+        text-decoration: none;
+        display: flex !important;
+    }
+    
+    .signup-icon {
+      display: flex !important;
+      background-image: var(--srcSignupIcon);
+      background-repeat: no-repeat;
+      background-position: center;
+      width: 20px !important;
+      height: 15px;
+      margin-right: 5px;
+      color: #777D8B;
+      margin-left: 0 !important;
+      background-color: var(--backgroundMenuLateral);
+    }
+    
+    .closeMenuButton {
+      position: absolute;
+      top: 17px;
+      left: 262px;
+      background-color: transparent;
+      display: none;
+      justify-content: center;
+      z-index: 99999;
+      align-items: center;
+      background-image: var(--srcXMarkIcon);
+      background-repeat: no-repeat;
+      background-position: center;
+      width: 19px !important;
+      height: 15px;
+    }
+    /*
+    .closeMenuButton:before {
+      content: "X";
+      color: var(--botaoFecharMenuCorX);
+      transform: rotateX( 45deg );
+      font-size: 26px;
+      font-weight: 600px;
+    }
+    */
+    
+    .closeMenuButtonActive{
+        display: flex !important;
+    }
+    
+    .menu.superior > ul {
+      width: 240px !important;
+      margin: 0 !important;
+      padding: 20px 0 20px 0;
+      border: 0 !important;
+      display: flex !important;
+      flex-direction: column;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 999999 !important;
+      background: var(--backgroundMenuLateral) !important;
+      height: 100vh;
+      max-height: 100vh;
+      box-sizing: border-box;
+      max-width: 100vw;
+      transition: 0.3s ease-in-out all;
+      transform: translateX(-110%);
+      -ms-overflow-style: none;
+      /* IE and Edge */
+      scrollbar-width: none;
+      /* Firefox */
+    }
+    
+    .menu.superior .nivel-dois li, .menu.lateral .nivel-dois li {
+      padding: 0 10px !important; 
+    }
+    .menu.superior .nivel-tres li, .menu.lateral .nivel-tres li {
+      padding: 0 10px !important; 
+    }
+    .menu.superior .nivel-quatro li, .menu.lateral .nivel-quatro li {
+      padding: 0 10px !important; 
+    }
+   
+    .menu.superior .nivel-um > li {
+      border-style: none !important;
+    }
+    
+    .menu.superior .nivel-um > li> a {
+        align-items: center;
+    }
+    
+   .menu.superior li.com-filho:after {}
+   
+   
+    .angle-button {
+      position: absolute;
+      top: 13px;
+      right: 0px;
+    }
+    .angle-button.active {
+        background: transparent !important;
+    }
+    
+    .angle-right {
+      display: flex;
+      background-image: var(--srcAngleRight);
+      background-repeat: no-repeat;
+      background-position: center;
+      width: 50px;
+      height: 18px;
+      background-color: var(--backgroundMenuLateral);
+    }
+    
+    .angle-down{
+      display: flex;
+      background-image: var(--srcAngleDown);
+      background-repeat: no-repeat;
+      background-position: center;
+      width: 50px;
+      height: 18px;
+      background-color: var(--backgroundMenuLateral);
+    }
+    
+    .menu.superior .nivel-dois li.com-filho > .angle-button {
+      top: 6px !important;
+      right: -33px !important;
+    }
+    .menu.superior .nivel-tres li.com-filho > .angle-button {
+      top: 6px !important;
+    }
+  
+  .menu.superior li {
+      background-color: transparent !important;
+  }
+    .menu.superior .titulo, .menu.lateral .titulo {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px !important;
+      line-height: 26px;
+    }
+    
+    .menu.superior .nivel-dois li a, .menu.lateral .nivel-dois li a {
+        font-size: 16px !important;
+        color: #777D8B;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 26px;
+    }
+    
+    .menu.superior ul {
+        box-shadow: none !important;
+    }
+    
+    .menu.superior > ul ::-webkit-scrollbar {
+      display: none;
+    }
+    .menu.superior > ul.active {
+      transform: translateX(0);
+    }
+  
+    .menu.superior > ul a {
+      color: var(--corLinks);
+    }
+    .menu.superior > ul a strong {
+      color: var(--corLinkPrincipal);
+      font-size: 16px;
+    }
+    .menu.superior .nivel-tres {
+      position: initial;
+      background: transparent;
+      left: initial;
+      max-width: 70vw;
+      box-sizing: border-box;
+    }
+    .menu.superior .nivel-tres a {
+      white-space: normal;
+      line-height: normal;
+      margin-bottom: 0.5rem;
+      color: var(--corLinksNivelTres);
+    }
+    .mt-4 {
+        margin-top: 4px;
+    }
+    
+  }
