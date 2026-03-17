@@ -5142,7 +5142,7 @@ body {
 
 .cn-persolinacao .anel-masculino h3, .cn-persolinacao .anel-feminino h3, .cn-persolinacao .anel-capa h3, .cn-persolinacao .cn-porta-joias h3 {
     line-height: normal!important;
-    color: var(--preto!important;
+    color: var(--preto)!important;
 }
 
 .cn-persolinacao .anel-masculino, .cn-persolinacao .anel-feminino, .cn-persolinacao .anel-capa, .cn-persolinacao .cn-porta-joias {
