@@ -625,5 +625,49 @@ $(document).ready(function(){
         
     }
 });
+
+function initSlickSolitarios() {
+
+    if ($('.slick-solitarios').length && !$('.slick-solitarios').hasClass('slick-initialized')) {
+  
+      $('.slick-solitarios').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        arrows: true,
+        dots: false,
+        infinite: false,
+        draggable: true,
+        responsive: [
+          {
+            breakpoint: 1024,
+            settings: { slidesToShow: 3 }
+          },
+          {
+            breakpoint: 768,
+            settings: { slidesToShow: 2 }
+          },
+          {
+            breakpoint: 480,
+            settings: { slidesToShow: 1 }
+          }
+        ]
+      });
+  
+    }
+  
+  }
+  
+  $(document).ready(function(){
+  
+    const observer = new MutationObserver(function(){
+      initSlickSolitarios();
+    });
+  
+    observer.observe(document.body, {
+      childList: true,
+      subtree: true
+    });
+  
+  });
     
     });
