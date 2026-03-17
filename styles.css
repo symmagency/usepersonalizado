@@ -5130,3 +5130,30 @@ body {
 .pagina-produto .cn-porta-joias {
     display: none !important;
 }
+
+.cn-persolinacao .anel-masculino ul li, .cn-persolinacao .anel-solitario ul li, .cn-persolinacao .anel-feminino ul li {
+    width: 36px;
+    height: 36px;
+}
+
+.cn-persolinacao .anel-masculino ul, .cn-persolinacao .anel-solitario ul, .cn-persolinacao .anel-feminino ul {
+    grid-template-columns: repeat(5, 36px);
+}
+
+.cn-persolinacao .anel-masculino h3, .cn-persolinacao .anel-feminino h3, .cn-persolinacao .anel-capa h3, .cn-persolinacao .cn-porta-joias h3 {
+    line-height: normal;
+    color: var(--preto);
+}
+
+.cn-persolinacao .anel-masculino, .cn-persolinacao .anel-feminino, .cn-persolinacao .anel-capa, .cn-persolinacao .cn-porta-joias {
+    border: 1px solid #e4e4e4;
+}
+
+.cn-persolinacao .anel-solitario ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cn-persolinacao .cn-solitario {
+    min-height: fit-content;
+}
