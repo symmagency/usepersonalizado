@@ -4799,7 +4799,7 @@ li.logado-sair a {
 
 @media screen and (max-width: 768px) {
 
-    #listagemProdutos {
+    .pagina-inicial #listagemProdutos {
         padding: 0;
     }
 	
