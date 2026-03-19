@@ -4903,6 +4903,16 @@ li.logado-sair a {
     background-color: #e42f2f!important;
 }
 
+.cn-solitario .slick-track:before,
+.cn-solitario .slick-track:after {
+    display: none;
+}
+
+.cn-solitario .slick-track {
+    display: flex;
+    gap: 10px;
+}
+
 @media screen and (max-width: 768px) {
     
     .cn-persolinacao .cn-aneis {
