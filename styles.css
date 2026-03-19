@@ -843,6 +843,8 @@ ul.drop-login li:last-child {
 .menu.superior > .nivel-um {
     text-align: center;
     display: flex;
+    justify-content: center;
+    gap: 20px;
 }
 
 .menu.superior .nivel-dois {
@@ -5021,6 +5023,7 @@ li.logado-sair a {
     align-items: center;
     gap: 10px;
     justify-content: center;
+    width: fit-content;
 }
 
 }
