@@ -2186,7 +2186,11 @@ div#blank-product-position1+.abas-custom:before {
 }
 
 .pagina-categoria .listagem .span4 .imagem-produto, .pagina-categoria .listagem .produtos-carrossel[data-produtos-linha="3"] .imagem-produto {
-    height: 270px;
+    height: 310px;
+}
+
+.pagina-categoria .listagem .listagem-item {
+    padding: 40px 0px 20px;
 }
 
 .pagina-categoria .listagem .span3 .imagem-produto, .pagina-categoria .listagem .produtos-carrossel[data-produtos-linha="4"] .imagem-produto {
