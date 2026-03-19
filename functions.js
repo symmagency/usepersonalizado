@@ -470,7 +470,7 @@ $(document).ready(function(){
         📍 INSERE NO DOM
      ==========================*/
    
-       $('.pagina-inicial .vitrine-20616020+ul').after(htmlSlider);
+       $('.pagina-inicial .vitrine-24188048+ul').after(htmlSlider);
    
        /* =========================
         🎯 INICIA SLICK
