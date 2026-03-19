@@ -4859,6 +4859,24 @@ li.logado-sair a {
     flex-wrap: wrap!important;
 }
 
+.cn-comprar button:after {
+    content: "";
+    display: block;
+    background: url(https://cdn.awsli.com.br/2959/2959406/arquivos/cart-plus.svg);
+    background-size: 100%;
+    width: 32px;
+    height: 32px;
+    top: -2px;
+    position: relative;
+}
+
+.cn-comprar button {
+    display: flex!important;
+    align-items: center!important;
+    justify-content: center!important;
+    gap: 20px!important;
+}
+
 @media screen and (max-width: 768px) {
     
     .cn-persolinacao .cn-aneis {
