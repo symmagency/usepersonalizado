@@ -658,4 +658,30 @@ function initSlickSolitarios() {
     $(".pagina-produto #descricao").after(htmlGuia);
   
   });
+
+  $('#rodape .institucional .row-fluid > .span9').prepend($('.sobre-loja-rodape'));
+    $('.logo').clone().prependTo($('.sobre-loja-rodape'));
+    $('#rodape .institucional .row-fluid > .span9 > .row-fluid').prepend(`
+
+    <div class="span4 contato_rodape">
+        <div class="whatsrp">
+            <strong>Fale conosco no WhatsApp</strong>
+            <span><i class="fa fa-whatsapp"></i>(11) 91033-0406</span>
+        </div>
+        <div class="mailrp">
+            <strong>Fale conosco no E-mail</strong>
+            <span><i class="fa fa-envelope"></i>sac@usepersonalizado.com.br</span>
+        </div>
+        <div class="horariorp">
+            <strong>Horário de atendimento</strong>
+            <span><i class="fa fa-clock-o"></i>Segunda a sexta: 9 às 18h <br>
+                Sábado: 10 às 12 h</span>
+        </div>
+        <div class="enderecorp">
+            <strong>Endereço</strong>
+            <span><i class="fa fa-map-marker"></i>Rua Rangel Pestana, 201, Centro, Jundiaí, São Paulo - CEP: 13201-000</span>
+        </div>
+    </div>
+
+    `);
 });

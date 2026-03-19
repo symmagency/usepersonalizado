@@ -5126,3 +5126,111 @@ li.logado-sair a {
 	    flex-direction: column;
 	}
 }
+
+/* Ajustes rodapé */
+
+#rodape .sobre-loja-rodape .titulo {
+    display: none;
+}
+
+#rodape .institucional {
+    background: #000;
+    border-top: 1px solid #222;
+}
+
+.sobre-loja-rodape .logo {
+    margin-bottom: 20px;
+    max-width: 170px;
+    display: none;
+}
+
+.sobre-loja-rodape p {
+    padding: 30px 0;
+}
+
+#rodape .titulo {
+    color: #fff;
+}
+
+#rodape .institucional .row-fluid > .span3 {
+    display: none;
+}
+
+#rodape .institucional .row-fluid > .span9 {
+    float: left;
+    width: 100%;
+    display: flex;
+    gap: 50px;
+}
+
+.contato_rodape > div span {
+    display: flex;
+    align-items: center;
+}
+
+.contato_rodape > div {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.contato_rodape i {
+    font-family: 'FontAwesome-v4';
+    margin-right: 8px;
+    font-size: 18px;
+    font-style: normal;
+}
+
+.contato_rodape * {
+    font-size: 14px;
+    color: #fff !important;
+    font-weight: normal;
+}
+
+.span4.contato_rodape {
+    padding: 30px 0;
+}
+
+#rodape>div:last-child .conteiner .assinatura-rodape {
+    justify-content: right;
+}
+
+#rodape>div:last-child .conteiner .row-fluid {
+    display: flex;
+}
+
+#rodape>div:last-child .conteiner .row-fluid p {
+    text-align: left;
+}
+
+#rodape > div:last-child {
+    margin-top: 30px;
+}
+
+/*.assinatura p:after {
+    content: " - Rua Rangel Pestana, 201, C1, Centro - Jundiaí/SP CEP 13.201-000 - Contato (11) 93806-7428 - Email: sac@usepersonalizado.com.br";
+}*/
+
+.links-rodape a, .links-rodape a:hover, .sobre-loja-rodape p, .sobre-loja-rodape p:hover {
+    color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+
+    #rodape .institucional .row-fluid > .span9 {
+        flex-direction: column;
+    }
+
+    .span4.contato_rodape {
+        text-align: center;
+    }
+
+    .span4.contato_rodape * {
+        text-align: center;
+        justify-content: center;
+    }
+
+    #rodape>div:last-child .conteiner .row-fluid {
+        flex-direction: column;
+    }
+
+}
