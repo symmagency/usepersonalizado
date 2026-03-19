@@ -579,5 +579,83 @@ function initSlickSolitarios() {
   $(".cupom-botao").on("click", function () {
     $(".cupom-widget").toggleClass("ativo");
   });
-    
-    });
+
+  // GUIA DE MEDIDAS DESCRICAO
+
+  $(document).ready(function () {
+
+    const htmlGuia = `
+    <div class="guia-medidas">
+  
+      <h2 class="titulo-guia">Como descobrir o tamanho</h2>
+  
+      <div class="grid-guia">
+  
+        <!-- MÉTODO 1 -->
+        <div class="box-metodo">
+          <div class="header-metodo">
+            <h3>Medição pelo diâmetro interno</h3>
+          </div>
+  
+          <p class="descricao">
+            Utilize um anel que já sirva confortavelmente no dedo desejado.
+          </p>
+  
+          <div class="imagem">
+            <img src="https://cdn.awsli.com.br/2959/2959406/arquivos/1.png" alt="Medição pelo diâmetro">
+          </div>
+  
+          <div class="instrucao">
+            <strong>Como medir:</strong>
+            <p>
+              Posicione uma régua sobre o anel e meça a distância de uma borda interna até a outra.
+              É importante medir apenas a parte interna, sem considerar a espessura do aro.
+            </p>
+            <p>
+              Com essa medida em milímetros, consulte a tabela de tamanhos para encontrar a numeração mais próxima.
+            </p>
+          </div>
+        </div>
+  
+        <!-- MÉTODO 2 -->
+        <div class="box-metodo">
+          <div class="header-metodo">
+            <h3>Medição pela circunferência do dedo</h3>
+          </div>
+  
+          <p class="descricao">
+            Você pode usar uma fita métrica ou até mesmo uma tira de papel.
+          </p>
+  
+          <div class="imagem">
+            <img src="https://cdn.awsli.com.br/2959/2959406/arquivos/0.png" alt="Medição pelo dedo">
+          </div>
+  
+          <div class="instrucao">
+            <strong>Como medir:</strong>
+            <p>
+              Envolva a fita ou o papel ao redor do dedo onde o anel será usado. Marque o ponto onde as extremidades se encontram.
+            </p>
+            <p>
+              Em seguida, estique o material sobre uma régua e anote o comprimento obtido. Utilize essa medida para identificar o tamanho correspondente na tabela.
+            </p>
+            <p>
+              <strong>Dica importante:</strong> se a junta do dedo for mais larga que a base, considere essa parte na medição para garantir um encaixe confortável.
+            </p>
+          </div>
+        </div>
+  
+      </div>
+  
+      <!-- DICA FINAL -->
+      <div class="dica">
+        💡 Para maior precisão, recomendamos testar os dois métodos. Se os resultados forem semelhantes, você encontrou o tamanho ideal. Em caso de dúvida, nosso atendimento pode te ajudar!
+      </div>
+  
+    </div>
+    `;
+  
+    $(".pagina-produto #descricao").after(htmlGuia);
+  
+  });
+});
