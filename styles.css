@@ -5362,4 +5362,80 @@ li.logado-sair a {
   }
 
   /* PRODUTO BRINDE */
-  
+  .produto-brinde[data-produto-id="399631427"] .preco-produto {
+    display: none;
+}
+
+.pagina-carrinho .produto-brinde[data-produto-id="399631427"] .quantidade input {
+    display: none;
+}
+
+.pagina-carrinho .produto-brinde[data-produto-id="399631427"] .quantidade {
+    border: 0;
+}
+
+.pagina-carrinho .produto-brinde[data-produto-id="399631427"] .quantidade:before {
+    content: "Brinde";
+    padding: 8px 16px;
+    background: #000;
+    color: #fff;
+    border-radius: 999px;
+}
+
+/* REVIEWS */
+
+.reviews {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.reviews h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+  color: #000;
+}
+
+.reviews p {
+  color: #777;
+  margin-bottom: 40px;
+  color: #000;
+}
+
+.reviews-track {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    padding: 20px 0;
+    scroll-behavior: smooth;
+}
+
+.review-card {
+  min-width: 280px;
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+}
+
+.review-card img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.stars {
+  color: #f5b301;
+  margin-bottom: 10px;
+}
+
+.review-card p {
+  font-size: 14px;
+  color: #555;
+}
+
+.review-card span {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+}

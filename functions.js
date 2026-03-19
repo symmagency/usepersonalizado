@@ -826,7 +826,7 @@ $(window).on('load', function () {
 });
 
 
-  const html = `
+  const htmlReviews = `
     <section class="reviews">
       <h2>Quem já comprou, recomenda!</h2>
       <p>Depoimentos reais de clientes sobre a Use Personalizado.</p>
@@ -872,6 +872,6 @@ $(window).on('load', function () {
     </section>
   `;
 
-  $('#corpo').after(html);
+  $('#corpo').after(htmlReviews);
  
 });
