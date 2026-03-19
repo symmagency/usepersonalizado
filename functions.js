@@ -513,7 +513,7 @@ function initSlickSolitarios() {
     if ($('.slick-solitarios').length && !$('.slick-solitarios').hasClass('slick-initialized')) {
   
       $('.slick-solitarios').slick({
-        slidesToShow: 3,
+        slidesToShow: 2,
         slidesToScroll: 1,
         arrows: true,
         dots: false,
