@@ -4996,6 +4996,18 @@ li.logado-sair a {
     background: url(https://cdn.awsli.com.br/2959/2959406/arquivos/personalizado.png);
 }
 
+/* Joias masculinas */
+
+.menu.superior .nivel-um > .categoria-id-24188149:before {
+    background: url(https://cdn.awsli.com.br/2959/2959406/arquivos/joia-masculina.png);
+}
+
+/* Alianca moeda */
+
+.menu.superior .nivel-um > .categoria-id-24188153:before {
+    background: url(https://cdn.awsli.com.br/2959/2959406/arquivos/alianca-namoro.png);
+}
+
 .menu.superior > .nivel-um > li {
     display: flex;
     align-items: center;
