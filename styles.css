@@ -31,8 +31,8 @@ button,
 
     /* Cores barra de newsletter */
     --fundo-newsletter: #181818;
-    --botao-newsletter: #C9A23B;
-    --texto-newsletter: #f9f9f9;
+    --botao-newsletter: #000;
+    --texto-newsletter: #ffff;
 
     /* Cores rodapé */
     --fundo-rodape: #fff;
