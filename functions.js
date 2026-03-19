@@ -506,125 +506,7 @@ $(document).ready(function(){
        
    });
 
-//   MENU MOBILE 2.0
 
-   function toggleDisplay(element, parentElement) {
-    const classParent = parentElement.classList[0];
-    const classAngle = $(element).find('i')[0].classList[0];
-    
-    if(classAngle == 'angle-right'){
-      $(`.${classParent} > ul`).css("display", "block");    
-    } else if(classAngle == 'angle-down'){
-      $(`.${classParent} > ul`).css("display", "none");    
-    }
-  }
-  document.addEventListener("DOMContentLoaded", function (event) {
-    var tam = $(window).width();
-    if(tam <= 768) {
-        const iconAtalhoMenu = document.querySelector(".atalho-menu");
-        const iconOpenMenu = document.querySelector(".cat");
-        const iconMenuSVG =
-          '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>';
-        iconAtalhoMenu.insertAdjacentHTML("afterbegin", iconMenuSVG);
-        iconAtalhoMenu.classList.remove("icon-th", "botao", "principal");
-        $('.menu.superior > ul > .cab-nav').remove();
-        
-        const ulAtalhosMobile = document.querySelector(".atalhos-mobile ul");
-      
-        const newItemSideMenu = document.createElement("li");
-        newItemSideMenu.classList.add("menu-button");
-        ulAtalhosMobile.prepend(newItemSideMenu);
-        
-        
-        newItemSideMenu.append(iconAtalhoMenu);
-        
-       
-          
-        const menuLateral = document.querySelector(".menu.superior > ul");
-      
-        const closeMenuButton = document.createElement("button");
-        
-        $('body').append(`<div class="overlay-menu"></div>`);
-        const overlayMenu = document.querySelector(".overlay-menu");
-        
-       
-        
-        $('.menu.superior li.com-filho').append(`
-          <div onclick="toggleDisplay(this, this.parentElement)" class="angle-button">
-              <i class="angle-right"></i>
-          </div>
-        `);
-        
-        $('.com-filho > ul').css("display", "none");
-        
-        $(".angle-button").click(function(event) {
-          $(this).find('i').toggleClass('angle-right').toggleClass('angle-down');
-        });
-        
-        $('.angle-button').click(function(){
-           $('.angle-button').not(this).removeClass("active");
-        });
-       
-        closeMenuButton.classList.add("closeMenuButton");
-        $('body').append(closeMenuButton);
-        
-         iconOpenMenu.onclick = () => {
-            $('body').css("overflow", "hidden");
-            overlayMenu.style.display = "block";
-            closeMenuButton.classList.add("closeMenuButtonActive");
-        }
-        
-        closeMenuButton.onclick = () => {
-          $('body').css("overflow", "scroll");
-          menuLateral.classList.remove("active");
-          overlayMenu.style.display = "none";
-          closeMenuButton.classList.remove("closeMenuButtonActive");
-        };
-        
-        window.onclick = function(event) {
-          if (event.target == overlayMenu) {
-              $('body').css("overflow", "scroll");
-              menuLateral.classList.remove("active");
-              overlayMenu.style.display = "none";
-              closeMenuButton.classList.remove("closeMenuButtonActive");
-          }
-        }
-    }
-  });
-
-  $(document).ready(function() {
-    var tam = $(window).width();
-    if(tam <= 767) {
-     if ($('#cabecalho .atalhos-mobile .icon-signout').is(':visible')) {
-        const urlLogout = `https://${window.location.hostname}/conta/logout`;
-        $('.menu.superior > ul').prepend(`
-            <li class="signout-menu-superior" style="border-bottom: 1px solid #D7D9DE !important;">
-                <a href="${urlLogout}" class="signout-link">
-                    <i class="signout-icon-menu"></i>
-                    <span class="mt-4">Sair</span>
-                </a>
-          </li>
-        `);
-    } else {
-      const urlLogin = `https://${window.location.hostname}/conta/login?next=/conta/index`;
-      $('.menu.superior > ul').prepend(`
-          <li class="signin-menu-superior">
-            <a href="${urlLogin}"  class="signin-link">
-              <i class="signin-icon"></i>
-              <span class="mt-4">Entrar na minha conta</span>
-            </a>
-          </li>
-          <li class="signup-menu-superior" style="border-bottom: 1px solid #D7D9DE !important;">
-            <a href="${urlLogin}"  class="signup-link">
-              <i class="signup-icon"></i>
-              <span class="mt-4">Cadastre-se</span>
-            </a>
-          </li>
-        `);
-    } 
-        
-    }
-});
 
 function initSlickSolitarios() {
 
@@ -668,6 +550,34 @@ function initSlickSolitarios() {
       subtree: true
     });
   
+  });
+
+  const CONFIG = {
+    titulo: "Primeira Compra",
+    desconto: "10% OFF",
+    cupom: "USE10"
+  };
+
+  const html = `
+    <div class="cupom-widget">
+      
+      <div class="cupom-botao">CUPOM</div>
+
+      <div class="cupom-box">
+        <p class="cupom-titulo">${CONFIG.titulo}</p>
+        <p class="cupom-desconto">${CONFIG.desconto}</p>
+        <p class="cupom-label">Cupom</p>
+        <p class="cupom-codigo">${CONFIG.cupom}</p>
+      </div>
+
+    </div>
+  `;
+
+  $("body").append(html);
+
+  // Toggle abrir/fechar
+  $(".cupom-botao").on("click", function () {
+    $(".cupom-widget").toggleClass("ativo");
   });
     
     });

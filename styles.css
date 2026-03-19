@@ -67,7 +67,7 @@ body {
 }
 
 body.pagina-inicial {
-    padding-top: 157px;
+    padding-top: 156px;
 }
 
 a {
@@ -824,7 +824,7 @@ ul.drop-login li:last-child {
 }
 
 .menu.superior .nivel-um>li .titulo {
-    font-size: 16px;
+    font-size: 15px;
     line-height: initial;
     margin: 0;
     font-weight: 500;
@@ -4807,323 +4807,7 @@ li.logado-sair a {
   pointer-events: auto;
 }
 
-/* MENU MOBILE 2.0 */
 
-body {
-    --corLinkPrincipal: #000;
-    --corLinks: #777D8B;
-    --corLinksNivelTres: #ccc;
-    --backgroundMenuLateral: #F2F2F2;
-    --botaoFecharMenu: #bb0000;
-    --botaoFecharMenuCorX: #ffffff;
-    --corIconeMenu: #000000;
-    
-    --srcAngleRight:  url("https://cdn.awsli.com.br/1994/1994497/arquivos/angle-right-solid.svg");;
-    --srcAngleDown:   url("https://cdn.awsli.com.br/1994/1994497/arquivos/angle-down-solid.svg");;
-    --srcSigninIcon:  url("https://cdn.awsli.com.br/1994/1994497/arquivos/login.svg"); 
-    --srcSignupIcon:  url("https://cdn.awsli.com.br/1994/1994497/arquivos/signup.svg");
-    --srcSignoutIcon: url("https://cdn.awsli.com.br/1994/1994497/arquivos/signout.svg");
-    --srcXMarkIcon:   url("https://cdn.awsli.com.br/1994/1994497/arquivos/xmark-mobile.svg");
-  }
-  
-  @media (max-width: 767.98px) {
-    #cabecalho {
-      position: absolute !important;
-      z-index: auto !important;
-    }
-    #cabecalho .atalhos-mobile {
-      display: block !important;
-    }
-    #cabecalho .atalhos-mobile ul {
-      display: flex;
-      justify-content: flex-end;
-    }
-    #cabecalho .atalhos-mobile ul li {
-      float: none;
-      margin: 0;
-    }
-    #cabecalho .atalhos-mobile ul li:first-child {
-      display: flex;
-      margin-right: auto;
-    }
-    #cabecalho .atalhos-mobile ul li.fundo-principal {
-      order: 3;
-    }
-    #cabecalho .atalhos-mobile ul li.menu-button {
-      display: flex;
-      align-items: center;
-    }
-    #cabecalho .atalhos-mobile ul li.menu-button a {
-      top: 0;
-    }
-    #cabecalho .atalhos-mobile ul li.menu-button a svg * {
-      color: var(--corIconeMenu);
-    }
-  
-    .busca {
-      margin: 0;
-    }
-    .overlay-menu {
-        content: "";
-        display: none;
-        background: rgba(0, 0, 0, 0.7);
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        z-index: 999;
-    }
- 
-  
-    .menu.superior {
-      position: relative;
-    }
-    
-    .signin-menu-superior {
-      font-style: normal;
-      font-weight: 500;
-      font-size: 16px;
-      line-height: 15px;
-      border-style: solid !important;
-      padding-bottom: 30px !important;
-    }
-    
-    .signin-link {
-        text-decoration: none;
-        display: flex !important;
-    }
-     .signout-link {
-        text-decoration: none;
-        display: flex !important;
-    }
-    
-    .signin-icon {
-      display: flex !important;
-      background-image: var(--srcSigninIcon);
-      background-repeat: no-repeat;
-      background-position: center;
-      width: 20px !important;
-      height: 20px !important;
-      margin-right: 5px;
-      color: #777D8B;
-      margin-left: 0 !important;
-      background-color: var(--backgroundMenuLateral);
-    }
-     .signup-menu-superior {
-      font-style: normal;
-      font-weight: 500;
-      font-size: 16px;
-      line-height: 15px;
-      border-style: solid !important;
-      border-color: #D7D9DE;
-      padding-bottom: 20px !important;
-    }
-     .signout-menu-superior {
-      font-style: normal;
-      font-weight: 500;
-      font-size: 16px;
-      line-height: 15px;
-      border-style: solid !important;
-      border-color: #D7D9DE;
-      padding-bottom: 20px !important;
-    }
-    .signout-icon-menu {
-      display: flex !important;
-      background-image: var(--srcSignoutIcon);
-      background-repeat: no-repeat;
-      background-position: center;
-      width: 20px !important;
-      height: 20px !important;
-      margin-right: 5px;
-      color: #777D8B;
-      margin-left: 0 !important;
-      background-color: var(--backgroundMenuLateral);
-    }
-      
-    .signup-link {
-        text-decoration: none;
-        display: flex !important;
-    }
-    
-    .signup-icon {
-      display: flex !important;
-      background-image: var(--srcSignupIcon);
-      background-repeat: no-repeat;
-      background-position: center;
-      width: 20px !important;
-      height: 15px;
-      margin-right: 5px;
-      color: #777D8B;
-      margin-left: 0 !important;
-      background-color: var(--backgroundMenuLateral);
-    }
-    
-    .closeMenuButton {
-      position: absolute;
-      top: 17px;
-      left: 262px;
-      background-color: transparent;
-      display: none;
-      justify-content: center;
-      z-index: 99999;
-      align-items: center;
-      background-image: var(--srcXMarkIcon);
-      background-repeat: no-repeat;
-      background-position: center;
-      width: 19px !important;
-      height: 15px;
-    }
-    /*
-    .closeMenuButton:before {
-      content: "X";
-      color: var(--botaoFecharMenuCorX);
-      transform: rotateX( 45deg );
-      font-size: 26px;
-      font-weight: 600px;
-    }
-    */
-    
-    .closeMenuButtonActive{
-        display: flex !important;
-    }
-    
-    .menu.superior > ul {
-      width: 240px !important;
-      margin: 0 !important;
-      padding: 20px 0 20px 0;
-      border: 0 !important;
-      display: flex !important;
-      flex-direction: column;
-      position: fixed;
-      top: 0;
-      left: 0;
-      z-index: 999999 !important;
-      background: var(--backgroundMenuLateral) !important;
-      height: 100vh;
-      max-height: 100vh;
-      box-sizing: border-box;
-      max-width: 100vw;
-      transition: 0.3s ease-in-out all;
-      transform: translateX(-110%);
-      -ms-overflow-style: none;
-      /* IE and Edge */
-      scrollbar-width: none;
-      /* Firefox */
-    }
-    
-    .menu.superior .nivel-dois li, .menu.lateral .nivel-dois li {
-      padding: 0 10px !important; 
-    }
-    .menu.superior .nivel-tres li, .menu.lateral .nivel-tres li {
-      padding: 0 10px !important; 
-    }
-    .menu.superior .nivel-quatro li, .menu.lateral .nivel-quatro li {
-      padding: 0 10px !important; 
-    }
-   
-    .menu.superior .nivel-um > li {
-      border-style: none !important;
-    }
-    
-    .menu.superior .nivel-um > li> a {
-        align-items: center;
-    }
-    
-   .menu.superior li.com-filho:after {}
-   
-   
-    .angle-button {
-      position: absolute;
-      top: 13px;
-      right: 0px;
-    }
-    .angle-button.active {
-        background: transparent !important;
-    }
-    
-    .angle-right {
-      display: flex;
-      background-image: var(--srcAngleRight);
-      background-repeat: no-repeat;
-      background-position: center;
-      width: 50px;
-      height: 18px;
-      background-color: var(--backgroundMenuLateral);
-    }
-    
-    .angle-down{
-      display: flex;
-      background-image: var(--srcAngleDown);
-      background-repeat: no-repeat;
-      background-position: center;
-      width: 50px;
-      height: 18px;
-      background-color: var(--backgroundMenuLateral);
-    }
-    
-    .menu.superior .nivel-dois li.com-filho > .angle-button {
-      top: 6px !important;
-      right: -33px !important;
-    }
-    .menu.superior .nivel-tres li.com-filho > .angle-button {
-      top: 6px !important;
-    }
-  
-  .menu.superior li {
-      background-color: transparent !important;
-  }
-    .menu.superior .titulo, .menu.lateral .titulo {
-      font-style: normal;
-      font-weight: 500;
-      font-size: 16px !important;
-      line-height: 26px;
-    }
-    
-    .menu.superior .nivel-dois li a, .menu.lateral .nivel-dois li a {
-        font-size: 16px !important;
-        color: #777D8B;
-        font-style: normal;
-        font-weight: 500;
-        line-height: 26px;
-    }
-    
-    .menu.superior ul {
-        box-shadow: none !important;
-    }
-    
-    .menu.superior > ul ::-webkit-scrollbar {
-      display: none;
-    }
-    .menu.superior > ul.active {
-      transform: translateX(0);
-    }
-  
-    .menu.superior > ul a {
-      color: var(--corLinks);
-    }
-    .menu.superior > ul a strong {
-      color: var(--corLinkPrincipal);
-      font-size: 16px;
-    }
-    .menu.superior .nivel-tres {
-      position: initial;
-      background: transparent;
-      left: initial;
-      max-width: 70vw;
-      box-sizing: border-box;
-    }
-    .menu.superior .nivel-tres a {
-      white-space: normal;
-      line-height: normal;
-      margin-bottom: 0.5rem;
-      color: var(--corLinksNivelTres);
-    }
-    .mt-4 {
-        margin-top: 4px;
-    }
-    
-  }
 
 /* Ajustes no código da CN */
 
@@ -5173,4 +4857,246 @@ body {
 .cn-persolinacao .cn-solitario ul {
     display: flex!important;
     flex-wrap: wrap!important;
+}
+
+@media screen and (max-width: 768px) {
+    
+    .cn-persolinacao .cn-aneis {
+        flex-direction: row!important;
+    }
+    
+    .cn-persolinacao .anel-masculino ul, .cn-persolinacao .anel-solitario ul, .cn-persolinacao .anel-feminino ul {
+        grid-template-columns: repeat(3, 36px) !important;
+    }
+    
+    .cn-persolinacao .anel-masculino h3, .cn-persolinacao .anel-feminino h3, .cn-persolinacao .anel-capa h3, .cn-persolinacao .cn-porta-joias h3 {
+        font-size: 16px;
+    }
+    
+    .cn-persolinacao .anel-masculino, .cn-persolinacao .anel-feminino, .cn-persolinacao .anel-capa, .cn-persolinacao .cn-porta-joias {
+        padding: 10px;
+    }
+    
+    .cn-persolinacao .cn-solitario {
+        padding: 10px;
+    }
+    
+    .cn-persolinacao .cn-solitario h3 {
+        font-size: 16px;
+    }
+
+}
+
+/* Ícones menu */
+
+.menu.superior .nivel-um > li:before {
+    content: "";
+    width: 28px;
+    height: 28px;
+    display: block;
+    background-size: 100%;
+}
+
+/* Aliança namoro */
+
+.menu.superior .nivel-um > .categoria-id-24171799:before {
+    background: url(https://cdn.awsli.com.br/2959/2959406/arquivos/alianca-namoro.png);
+}
+
+/* Anéis */
+
+.menu.superior .nivel-um > .categoria-id-24171813:before {
+    background: url(https://cdn.awsli.com.br/2959/2959406/arquivos/aneis.png);
+}
+
+/* Caixinhas */
+
+.menu.superior .nivel-um > .categoria-id-24171847:before {
+    background: url(https://cdn.awsli.com.br/2959/2959406/arquivos/caixinhas.png);
+}
+
+/* Conjuntos */
+
+.menu.superior .nivel-um > .categoria-id-24171848:before {
+    background: url(https://cdn.awsli.com.br/2959/2959406/arquivos/conjuntos.png);
+}
+
+/* Joias */
+
+.menu.superior .nivel-um > .categoria-id-24171808:before {
+    background: url(https://cdn.awsli.com.br/2959/2959406/arquivos/joias.png);
+}
+
+/* Personalizado */
+
+.menu.superior .nivel-um > .categoria-id-24171811:before {
+    background: url(https://cdn.awsli.com.br/2959/2959406/arquivos/personalizado.png);
+}
+
+.menu.superior > .nivel-um > li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+}
+
+/* CUPOM DE DESCONTO FLUTUANTE */
+
+/* Container geral */
+.cupom-widget {
+    position: fixed;
+    right: 0;
+    top: 40%;
+    display: flex;
+    align-items: center;
+    z-index: 9999;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Botão lateral */
+  .cupom-botao {
+      background: #f4c04e;
+      color: #000;
+      padding: 15px 10px;
+      writing-mode: vertical-rl;
+      transform: rotate(180deg);
+      cursor: pointer;
+      font-weight: bold;
+      border-radius: 0 10px 10px 0;
+      height: 130px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-sizing: border-box;
+  }
+  
+  /* Caixa do cupom */
+  .cupom-box {
+    background: #f5f5f5;
+    padding: 15px 20px;
+    width: 220px;
+    border-radius: 0;
+    margin-right: -220px;
+    transition: all 0.3s ease;
+    box-sizing: border-box;
+    height: 130px;
+  }
+  
+  /* Quando ativo (aberto) */
+  .cupom-widget.ativo .cupom-box {
+    margin-right: 0;
+  }
+  
+  /* Textos */
+  .cupom-titulo {
+    margin: 0;
+    font-size: 14px;
+    text-align: center;
+  }
+  
+  .cupom-desconto {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 5px 0 10px;
+    text-align: center;
+  }
+  
+  .cupom-label {
+      margin: 0 0 5px;
+      font-size: 13px;
+      text-align: center;
+  }
+  .cupom-codigo {
+      color: #e60023;
+      font-weight: bold;
+      margin: 0;
+      padding: 10px;
+      background: rgba(0, 0, 0, .1);
+      border-radius: 10px;
+      border: 1px dashed #000;
+      text-align: center;
+      font-size: 16px;
+  }
+
+/* GUIA DE MEDIDAS */
+
+.guia-medidas {
+  margin-top: 40px;
+  font-family: Arial, sans-serif;
+}
+
+.titulo-guia {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.grid-guia {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+/* Box */
+.box-metodo {
+  background: #f4f6f8;
+  border-radius: 12px;
+  padding: 20px;
+}
+
+/* Header */
+.header-metodo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+/* Texto */
+.descricao {
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+/* Imagem */
+.imagem {
+    max-height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.imagem img {
+    height: 100%;
+    display: block;
+    width: fit-content;
+    max-height: 200px;
+}
+
+/* Instrução */
+.instrucao {
+  background: #fff;
+  border-left: 4px solid #2ecc71;
+  padding: 15px;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+/* Dica */
+.dica {
+  margin-top: 20px;
+  background: #fff3cd;
+  padding: 15px;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+@media screen and (max-width: 768px) {
+	
+	.grid-guia {
+	    display: flex;
+	    flex-direction: column;
+	}
 }
