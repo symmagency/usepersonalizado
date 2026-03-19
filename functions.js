@@ -748,4 +748,44 @@ function initSlickSolitarios() {
         $('#listagemProdutos > ul').append(novaLinha);
     }
 }
+
+$(document).ready(function($) {
+  
+  // Array com os IDs dos produtos que recebem a badge "Brinde"
+  const produtosBrinde = [
+    '399631427',
+    // Adicione mais IDs conforme necessário
+    // '123456789',
+    // '987654321'
+  ];
+ 
+  // Seletor específico para a página carrinho
+  if ($('.pagina-carrinho').length) {
+    
+    // Iterar sobre cada linha da tabela de carrinho
+    $('tr[data-produto-id]').each(function() {
+      const $row = $(this);
+      const produtoId = $row.attr('data-produto-id');
+      
+      // Verificar se o produto está no array de brindes
+      if (produtosBrinde.includes(produtoId)) {
+        
+        // Encontrar o elemento .quantidade dentro dessa linha
+        const $quantidadeDiv = $row.find('.quantidade');
+        
+        if ($quantidadeDiv.length) {
+          // Criar a badge "Brinde"
+          const $badge = $('<span class="badge badge-brinde">Brinde</span>');
+          
+          // Substituir o conteúdo do .quantidade pela badge
+          $quantidadeDiv.replaceWith($badge);
+          
+          // Adicionar classe ao elemento pai para identificação visual
+          $row.addClass('produto-brinde');
+        }
+      }
+    });
+  }
+});
+ 
 });
