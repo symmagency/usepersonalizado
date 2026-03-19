@@ -5332,3 +5332,9 @@ li.logado-sair a {
   }
       
   }
+
+  /* PRODUTO BRINDE */
+
+  .produto-brinde .preco-produto {
+    display: none;
+}
