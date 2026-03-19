@@ -4877,6 +4877,10 @@ li.logado-sair a {
     gap: 20px!important;
 }
 
+.cn-comprar {
+    background-color: #e42f2f!important;
+}
+
 @media screen and (max-width: 768px) {
     
     .cn-persolinacao .cn-aneis {
