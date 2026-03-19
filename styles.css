@@ -82,6 +82,10 @@ a {
     color: var(--cor-da-marca);
 }
 
+.conteiner {
+    max-width: 1300px;
+}
+
 .botao.principal {
     background: var(--cor-de-botoes)!important;
     transition: all .3s;
@@ -820,7 +824,7 @@ ul.drop-login li:last-child {
 
 #menuCat .conteiner {
     padding: 0;
-    max-width: 1300px;
+    max-width: 100%;
 }
 
 .menu.superior .nivel-um>li .titulo {
@@ -1371,7 +1375,7 @@ div#categoriasListagem {
     padding-left: 0px;
 }
 
-#listagemProdutos {
+.pagina-inicial #listagemProdutos {
     max-width: 100%;
     margin: 0 auto;
     padding: 0 60px;
@@ -2178,7 +2182,11 @@ div#blank-product-position1+.abas-custom:before {
     border: 0;
     margin: 0 auto;
     margin-top: 20px;
-    max-width: 1140px;
+    max-width: 1300px;
+}
+
+.pagina-categoria .listagem .span4 .imagem-produto, .pagina-categoria .listagem .produtos-carrossel[data-produtos-linha="3"] .imagem-produto {
+    height: 270px;
 }
 
 .pagina-categoria .listagem .span3 .imagem-produto, .pagina-categoria .listagem .produtos-carrossel[data-produtos-linha="4"] .imagem-produto {
