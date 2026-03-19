@@ -32,7 +32,7 @@ button,
     /* Cores barra de newsletter */
     --fundo-newsletter: #181818;
     --botao-newsletter: #f1f1f1;
-    --texto-newsletter: #000;
+    --texto-newsletter: #fff;
 
     /* Cores rodapé */
     --fundo-rodape: #fff;
@@ -1536,6 +1536,7 @@ div#categoriasListagem {
     height: 52px;
     background: var(--botao-newsletter);
     transition: all .3s;
+    color: #000;
 }
 
 #barraNewsletter .componente .botao:hover {
