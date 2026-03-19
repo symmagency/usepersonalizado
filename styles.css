@@ -4910,7 +4910,7 @@ li.logado-sair a {
 
 .cn-solitario .slick-track {
     display: flex;
-    gap: 10px;
+    gap: 0px;
 }
 
 @media screen and (max-width: 768px) {
