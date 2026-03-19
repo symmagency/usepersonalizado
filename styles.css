@@ -833,6 +833,7 @@ ul.drop-login li:last-child {
     flex-direction: column;
     align-items: center;
     padding: 20px 0;
+    text-wrap: inherit;
 }
 
 .menu.superior > .nivel-um {
@@ -4924,31 +4925,31 @@ li.logado-sair a {
 
 /* Aliança namoro */
 
-.menu.superior .nivel-um > .categoria-id-24171799:before {
+.menu.superior .nivel-um > .categoria-id-24188048:before {
     background: url(https://cdn.awsli.com.br/2959/2959406/arquivos/alianca-namoro.png);
 }
 
 /* Anéis */
 
-.menu.superior .nivel-um > .categoria-id-24171813:before {
+.menu.superior .nivel-um > .categoria-id-24188062:before {
     background: url(https://cdn.awsli.com.br/2959/2959406/arquivos/aneis.png);
 }
 
 /* Caixinhas */
 
-.menu.superior .nivel-um > .categoria-id-24171847:before {
+.menu.superior .nivel-um > .categoria-id-24188102:before {
     background: url(https://cdn.awsli.com.br/2959/2959406/arquivos/caixinhas.png);
 }
 
 /* Conjuntos */
 
-.menu.superior .nivel-um > .categoria-id-24171848:before {
+.menu.superior .nivel-um > .categoria-id-24188103:before {
     background: url(https://cdn.awsli.com.br/2959/2959406/arquivos/conjuntos.png);
 }
 
 /* Joias */
 
-.menu.superior .nivel-um > .categoria-id-24171808:before {
+.menu.superior .nivel-um > .categoria-id-24188057:before {
     background: url(https://cdn.awsli.com.br/2959/2959406/arquivos/joias.png);
 }
 
