@@ -4889,6 +4889,8 @@ li.logado-sair a {
 
 /* Ícones menu */
 
+@media screen and (min-width: 768px) {
+
 .menu.superior .nivel-um > li:before {
     content: "";
     width: 28px;
@@ -4938,6 +4940,8 @@ li.logado-sair a {
     align-items: center;
     gap: 10px;
     justify-content: center;
+}
+
 }
 
 /* CUPOM DE DESCONTO FLUTUANTE */
