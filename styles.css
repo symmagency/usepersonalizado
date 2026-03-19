@@ -4827,6 +4827,11 @@ li.logado-sair a {
   pointer-events: auto;
 }
 
+.depoimentos-video {
+    display: block;
+    margin-top: 70px;
+}
+
 
 
 /* Ajustes no código da CN */
@@ -5357,3 +5362,4 @@ li.logado-sair a {
   }
 
   /* PRODUTO BRINDE */
+  
