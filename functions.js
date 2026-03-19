@@ -558,7 +558,7 @@ function initSlickSolitarios() {
     cupom: "USE10"
   };
 
-  const html = `
+  const htmlCupom = `
     <div class="cupom-widget">
       
       <div class="cupom-botao">CUPOM</div>
@@ -573,7 +573,7 @@ function initSlickSolitarios() {
     </div>
   `;
 
-  $("body").append(html);
+  $("body").append(htmlCupom);
 
   // Toggle abrir/fechar
   $(".cupom-botao").on("click", function () {
@@ -749,43 +749,129 @@ function initSlickSolitarios() {
     }
 }
 
-// $(document).ready(function($) {
-  
-//   // Array com os IDs dos produtos que recebem a badge "Brinde"
-//   const produtosBrinde = [
-//     '399631427',
-//     // Adicione mais IDs conforme necessário
-//     // '123456789',
-//     // '987654321'
-//   ];
- 
-//   // Seletor específico para a página carrinho
-//   if ($('.pagina-carrinho').length) {
-    
-//     // Iterar sobre cada linha da tabela de carrinho
-//     $('tr[data-produto-id]').each(function() {
-//       const $row = $(this);
-//       const produtoId = $row.attr('data-produto-id');
-      
-//       // Verificar se o produto está no array de brindes
-//       if (produtosBrinde.includes(produtoId)) {
-        
-//         // Encontrar o elemento .quantidade dentro dessa linha
-//         const $quantidadeDiv = $row.find('.quantidade');
-        
-//         if ($quantidadeDiv.length) {
-//           // Criar a badge "Brinde"
-//           const $badge = $('<span class="badge badge-brinde">Brinde</span>');
-          
-//           // Substituir o conteúdo do .quantidade pela badge
-//           $quantidadeDiv.replaceWith($badge);
-          
-//           // Adicionar classe ao elemento pai para identificação visual
-//           $row.addClass('produto-brinde');
-//         }
-//       }
-//     });
-//   }
-// });
+$(window).on('load', function () {
+  const brindes = [];
+
+  // 1. Coleta nomes dos solitários dos bundles
+  $('.tabela-carrinho tbody tr').each(function () {
+    const $tr = $(this);
+
+    const liBrinde = $tr.find('li span:contains("Anel Solitário")');
+
+    if (liBrinde.length) {
+      const nome = liBrinde.find('strong').text().trim().toLowerCase();
+
+      if (nome) {
+        brindes.push(nome);
+      }
+    }
+  });
+
+  // 2. Marca produtos individuais (não bundle) por correspondência parcial
+  $('.tabela-carrinho tbody tr').each(function () {
+    const $tr = $(this);
+
+    const isBundle = $tr.find('li span:contains("Anel Solitário")').length > 0;
+    if (isBundle) return;
+
+    const nomeProduto = $tr.find('.produto-info a').text().trim().toLowerCase();
+
+    brindes.forEach(function (brinde) {
+      if (nomeProduto.includes(brinde) || brinde.includes(nomeProduto)) {
+        $tr.addClass('produto-brinde');
+      }
+    });
+  });
+});
+
+$(window).on('load', function () {
+  $('.tabela-carrinho tbody tr').each(function () {
+    const $tr = $(this);
+
+    if ($tr.hasClass('produto-brinde')) return;
+
+    const $excluir = $tr.find('.excluir');
+
+    if ($excluir.length && !$excluir.children().length) {
+      const produtoId = $tr.data('produto-id');
+
+      if (produtoId) {
+        const link = `/carrinho/produto/${produtoId}/remover`;
+
+        $excluir.html(`<a href="${link}"><i class="fa fa-trash"></i></a>`);
+      }
+    }
+  });
+});
+
+$(window).on('load', function () {
+  const alvoId = 399631427;
+
+  const $trs = $('.tabela-carrinho tbody tr');
+
+  // conta apenas TRs que possuem data-produto-id
+  const $trsComProduto = $trs.filter(function () {
+    return $(this).data('produto-id');
+  });
+
+  const $produtoAlvo = $trsComProduto.filter(function () {
+    return $(this).data('produto-id') == alvoId;
+  });
+
+  // se só existir 1 TR com data-produto-id e for o alvo → remove
+  if ($trsComProduto.length === 1 && $produtoAlvo.length) {
+    const link = `https://gabriela-fernanda.lojaintegrada.com.br/carrinho/produto/${alvoId}/remover`;
+    window.location.href = link;
+  }
+});
+
+
+  const html = `
+    <section class="reviews">
+      <h2>Quem já comprou, recomenda!</h2>
+      <p>Depoimentos reais de clientes sobre a Use Personalizado.</p>
+
+      <div class="reviews-track">
+
+        <div class="review-card">
+          <img src="https://i.pravatar.cc/80?img=11">
+          <div class="stars">★★★★★</div>
+          <p>Produto lindo, acabamento muito bem feito e chegou rápido. Vale muito a pena.</p>
+          <span>Fabio Souza</span>
+        </div>
+
+        <div class="review-card">
+          <img src="https://i.pravatar.cc/80?img=12">
+          <div class="stars">★★★★★</div>
+          <p>As alianças vieram exatamente como pedi. Personalização perfeita.</p>
+          <span>Lucas Ferreira</span>
+        </div>
+
+        <div class="review-card">
+          <img src="https://i.pravatar.cc/80?img=13">
+          <div class="stars">★★★★★</div>
+          <p>Qualidade impecável, superou minhas expectativas em todos os detalhes.</p>
+          <span>José Mendes</span>
+        </div>
+
+        <div class="review-card">
+          <img src="https://i.pravatar.cc/80?img=5">
+          <div class="stars">★★★★★</div>
+          <p>Excelente custo-benefício. Material de qualidade e ótimo atendimento.</p>
+          <span>Ana Clara Gomes</span>
+        </div>
+
+        <div class="review-card">
+          <img src="https://i.pravatar.cc/80?img=15">
+          <div class="stars">★★★★★</div>
+          <p>Entrega rápida e produto perfeito. Recomendo sem dúvidas.</p>
+          <span>Julio Alves</span>
+        </div>
+
+      </div>
+    </section>
+  `;
+
+  $('#corpo').after(html);
  
 });
