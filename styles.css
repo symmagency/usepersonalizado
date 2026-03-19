@@ -1492,6 +1492,7 @@ div#categoriasListagem {
     width: 50%;
     box-sizing: border-box;
     color: var(--texto-newsletter);
+    text-align: left;
 }
 
 #barraNewsletter .componente .interno-conteudo {
@@ -1501,11 +1502,12 @@ div#categoriasListagem {
 }
 
 #barraNewsletter .componente div.newsletter-cadastro {
-    display: block;
     float: none;
     text-align: center;
     margin: 25px 0 30px;
     width: 50%;
+    display: flex;
+    justify-content: flex-end;;
 }
 
 #barraNewsletter .componente input[type="text"] {
@@ -4962,6 +4964,8 @@ li.logado-sair a {
     height: 28px;
     display: block;
     background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 /* Aliança namoro */
@@ -5306,7 +5310,7 @@ li.logado-sair a {
     align-items: center;
     justify-content: space-between;
     gap: 40px;
-    max-width: 1200px;
+    max-width: 1300px;
     margin: 0 auto;
   }
   
