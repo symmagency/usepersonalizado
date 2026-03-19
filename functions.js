@@ -684,4 +684,39 @@ function initSlickSolitarios() {
     </div>
 
     `);
+
+    $(document).ready(function () {
+      const html = `
+        <section class="secao-use-personalizado">
+          <div class="container-use-personalizado">
+            
+            <div class="use-personalizado-texto">
+              <h2>
+                <span class="destaque"></span>
+                Use Personalizado 💍
+              </h2>
+              
+              <p>
+                Na Use Personalizado, cada detalhe é pensado para representar o seu momento. Mais do que joias, criamos símbolos de amor, compromisso e conexão.
+              </p>
+    
+              <p>
+                Somos especializados em alianças de namoro, noivado e joias personalizadas, com opções em prata 950, ouro e modelos exclusivos que combinam estilo, qualidade e significado.
+              </p>
+    
+              <p>
+                Aqui você encontra desde peças clássicas até designs modernos e personalizados, perfeitos para marcar histórias únicas com quem você ama.
+              </p>
+            </div>
+    
+            <div class="use-personalizado-banner">
+              <img src="https://cdn.awsli.com.br/2959/2959406/arquivos/image-banner-about.png" alt="Use Personalizado">
+            </div>
+    
+          </div>
+        </section>
+      `;
+    
+      $('.pagina-inicial #barraNewsletter').before(html);
+    });
 });
