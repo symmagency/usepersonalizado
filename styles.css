@@ -4988,6 +4988,8 @@ li.logado-sair a {
     bottom: 12px;
     color: #fff;
     text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
 }
 
 .cn-comprar button {
