@@ -3545,8 +3545,9 @@ font-weight: bold;
 /* MENU LOJA.LI */
 @media screen and (min-width: 768px) {
 
-    .cn-persolinacao .cn-solitario ul li, .cn-persolinacao .cn-porta-joias ul li {
-        height: 140px!important;
+    .cn-persolinacao .cn-solitario .slick-track .slick-slide {
+        padding: 6px;
+        height: 120px !important;
     }
     
     .menu.superior li.logado {
