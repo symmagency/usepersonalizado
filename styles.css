@@ -2809,9 +2809,10 @@ font-weight: bold;
     border: 2px solid #e8e8e8;
     border-radius: 0;
     padding: 0;
-    height: 46px;
+    height: 40px !important;
     box-shadow: none;
     border-right: 0;
+    box-sizing: border-box;
 }
 
 .pagina-carrinho #formCalcularFrete button.btn i {
@@ -5538,6 +5539,17 @@ li.logado-sair a {
         border: 1px solid #d8d8d8;
         top: 50%;
         transform: translateY(-50%);
+    }
+
+    .tabela-carrinho .produto-info *, .tabela-carrinho .produto-info {
+        text-align: center;
+    }
+
+    .tabela-carrinho #formCalcularFrete .controls {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
     }
 
 }
