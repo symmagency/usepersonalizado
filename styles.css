@@ -5579,6 +5579,25 @@ li.logado-sair a {
         text-align: center;
     }
 
+    .upsell-produtos p {
+        font-size: 13px;
+    }
+
+    .upsell-produtos .product.slick-slide {
+        /* width: 130px !important; */
+        padding: 8px !important;
+        border-radius: 10px;
+        margin: 5px;
+    }
+
+    .upsell-produtos h3 {
+        font-size: 18px;
+    }
+
+    .upsell-produtos a {
+        width: 100%;
+    }
+
     .tabela-carrinho #formCalcularFrete .controls {
         display: flex;
         justify-content: center;
