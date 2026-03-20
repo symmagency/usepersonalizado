@@ -1118,6 +1118,10 @@ ul.drop-login li:last-child {
     border: 0;
 }
 
+.listagem .listagem-item .imagem-produto.has-zoom .imagem-zoom {
+    position: absolute;
+}
+
 #avisoCookies .botao {
     border: 0;
     font-size: 16px;
@@ -4427,6 +4431,7 @@ li.logado-sair a {
 .produto .nome-produto {
     text-align: center;
     font-size: 18px;
+    margin-bottom: 10px;
 }
 
 .produto .codigo-produto {
