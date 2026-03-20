@@ -3567,7 +3567,26 @@ font-weight: bold;
 
 @media screen and (max-width: 767px) {
 
-    .tabela-carrinho #formCalcularFrete .controls {display: flex;justify-content: center;align-items: center;gap: 10px;}
+.tabela-carrinho #formCalcularFrete .controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.cep label {
+    text-align: center;
+}
+
+#formCalcularCep .input-append {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.titulo-guia {
+    text-align: center;
+}
 
 .pagina-carrinho .total {
     text-align: center;
@@ -5183,6 +5202,7 @@ li.logado-sair a {
 .titulo-guia {
   font-size: 24px;
   margin-bottom: 20px;
+  color: #000;
 }
 
 .grid-guia {
@@ -5675,7 +5695,7 @@ li.logado-sair a {
     position: absolute;
     right: 15px;
     top: 10px;
-    font-size: 24px;
+    font-size: 44px;
     cursor: pointer;
 }
 
