@@ -5012,8 +5012,8 @@ li.logado-sair a {
         font-size: 16px;
     }
 
-    .pagina-produto .acoes-produto {
-        padding: 0 10px !important;
+    .pagina-produto .produto {
+        padding: 20px 10px;
     }
 
 }
