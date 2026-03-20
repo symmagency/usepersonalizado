@@ -939,7 +939,7 @@ $(window).on('load', function () {
       responsive: [
           {
               breakpoint: 768,
-              settings: { slidesToShow: 1 },
+              settings: { slidesToShow: 2 },
           },
       ],
   });
