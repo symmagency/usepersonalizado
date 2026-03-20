@@ -4780,9 +4780,14 @@ li.logado-sair a {
 }
 
 .produto .principal strong.preco-promocional.cor-principal.titulo {
-    font-size: 28px;
+    font-size: 40px;
     font-weight: bold;
-    color: #c43333;
+    color: #4daf50;
+}
+
+.cn-preco > span > div {
+    display: flex;
+    flex-direction: column;
 }
 
 @media screen and (min-width: 768px) {
@@ -4897,21 +4902,27 @@ li.logado-sair a {
 }
 
 .cn-persolinacao .anel-masculino ul li, .cn-persolinacao .anel-solitario ul li, .cn-persolinacao .anel-feminino ul li {
-    width: 36px!important;
-    height: 36px!important;
+    width: 28px !important;
+    height: 28px !important;
 }
 
 .cn-persolinacao .anel-masculino ul, .cn-persolinacao .anel-solitario ul, .cn-persolinacao .anel-feminino ul {
-    grid-template-columns: repeat(5, 36px)!important;
+    grid-template-columns: repeat(7, 28px)!important;
 }
 
 .cn-persolinacao .anel-masculino h3, .cn-persolinacao .anel-feminino h3, .cn-persolinacao .anel-capa h3, .cn-persolinacao .cn-porta-joias h3 {
     line-height: normal!important;
     color: var(--preto)!important;
+    font-size: 15px;
+}
+
+.cn-persolinacao .cn-aneis > div {
+    flex: 1;
 }
 
 .cn-persolinacao .anel-masculino, .cn-persolinacao .anel-feminino, .cn-persolinacao .anel-capa, .cn-persolinacao .cn-porta-joias {
     border: 1px solid #e4e4e4!important;
+    padding: 12px;
 }
 
 .cn-persolinacao .cn-solitario {
@@ -5676,7 +5687,7 @@ a.comprar-whats {
     padding: 10px 16px;
     background: transparent;
     color: #000;
-    border-radius: 6px;
+    border-radius: 0px;
     cursor: pointer;
     width: 100%;
     border: 1px solid #000;
