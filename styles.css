@@ -1415,6 +1415,10 @@ div#categoriasListagem {
     border: 0;
 }
 
+.cn-title-stories {
+    display: none !important;
+}
+
 .listagem .titulo-categoria:hover {
     background: none;
     padding-left: 0px;
