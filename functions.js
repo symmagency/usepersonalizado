@@ -554,8 +554,8 @@ function initSlickSolitarios() {
 
   const CONFIG = {
     titulo: "Primeira Compra",
-    desconto: "10% OFF",
-    cupom: "USE10"
+    desconto: "5% OFF",
+    cupom: "USE05"
   };
 
   const htmlCupom = `

@@ -5118,6 +5118,7 @@ li.logado-sair a {
       align-items: center;
       justify-content: center;
       box-sizing: border-box;
+      font-size: 16px;
   }
   
   /* Caixa do cupom */
@@ -5161,7 +5162,7 @@ li.logado-sair a {
       text-align: center;
   }
   .cupom-codigo {
-      color: #e60023;
+      color: #ff788d;
       font-weight: bold;
       margin: 0;
       padding: 10px;
