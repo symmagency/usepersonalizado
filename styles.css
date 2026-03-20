@@ -4488,7 +4488,7 @@ div#blank-product-position1+.abas-custom:before {
 
 .pagina-inicial #barraNewsletter.posicao-rodape {
     display: block!important;
-    margin: 30px 0;
+    margin: 0;
 }
 
 #barraNewsletter .componente .interno-conteudo {
@@ -5329,6 +5329,7 @@ li.logado-sair a {
 
     #rodape .institucional .row-fluid > .span9 {
         flex-direction: column;
+        gap: 0;
     }
 
     .span4.contato_rodape {
