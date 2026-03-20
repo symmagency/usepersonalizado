@@ -4131,6 +4131,12 @@ li.logado-sair a {
 
 .pagina-inicial #corpo {
     margin-top: 0;
+    padding: 0 24px;
+}
+
+.depoimentos-video h2 {
+    font-size: 18px;
+    line-height: normal;
 }
 
 .mini-banner .modulo.span4 {
