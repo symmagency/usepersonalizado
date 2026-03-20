@@ -902,7 +902,7 @@ $(window).on('load', function () {
   function renderProdutos() {
     let html = `<div class="upsell-produtos" style="margin-top:30px;">
       <h3>Combina com sua compra</h3>
-      <div style="display:flex;gap:20px;">`;
+      <div class="append-upsell-produtos" style="display:flex;gap:20px;">`;
 
     produtos.forEach(prod => {
       const existeNoCarrinho = $(`.tabela-carrinho tr[data-produto-id="${prod.id}"]`).length > 0;
@@ -911,7 +911,7 @@ $(window).on('load', function () {
         const link = `https://gabriela-fernanda.lojaintegrada.com.br/carrinho/produto/${prod.id}/adicionar`;
 
         html += `
-          <div style="border:1px solid #eee;padding:15px;width:200px;text-align:center;">
+          <div class="product" style="border:1px solid #eee;padding:15px;width:200px;text-align:center;">
           	<div class="add-too-img">
             	<img src="${prod.img}" style="width:100%;height:auto;">
             </div>
@@ -928,6 +928,21 @@ $(window).on('load', function () {
 
     $('.upsell-produtos').remove();
     $('.tabela-carrinho').after(html);
+    $('.append-upsell-produtos').slick({
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      arrows: true,
+      dots: false,
+      infinite: false,
+      adaptiveHeight: false,
+      draggable: true,
+      responsive: [
+          {
+              breakpoint: 768,
+              settings: { slidesToShow: 1 },
+          },
+      ],
+  });
   }
 
   renderProdutos();

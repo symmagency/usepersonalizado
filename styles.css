@@ -3646,7 +3646,7 @@ font-weight: bold;
 }
 
 .conteiner-principal {
-    padding: 20px;
+    padding: 0px;
 }
 
 .pagina-carrinho .acao-editar > .span12 .botao {
@@ -3655,6 +3655,16 @@ font-weight: bold;
     line-height: 56px;
     padding: 0;
     font-size: 18px;
+}
+
+.contato_rodape > div span {
+    width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+#rodape .institucional {
+    padding: 0 20px;
 }
 
 .pagina-carrinho .acao-editar {
