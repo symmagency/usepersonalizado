@@ -4222,6 +4222,12 @@ li.logado-sair a {
 .bandeiras-produto .bandeira-promocao {
     font-size: 12px;
     height: 24px;
+    width: fit-content;
+}
+
+.pagamento>ul+ul {
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .depoimentos-video h2 {
@@ -5709,6 +5715,21 @@ a.comprar-whats {
 
     .upsell-produtos p {
         font-size: 13px;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        height: 40px;
+    }
+
+    .upsell-produtos {
+        padding-top: 20px;
+        border-top: 1px solid #d8d8d8;
+    }
+
+    .carrinho-checkout .logo a img {
+        max-width: 130px;
     }
 
     .upsell-produtos .product.slick-slide {
