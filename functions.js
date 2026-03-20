@@ -1115,5 +1115,34 @@ $(document).ready(function(){
   });
 
 });
+
+$(document).ready(function () {
+
+  $(".listagem .listagem-item").each(function () {
+
+      var $item = $(this);
+      var $botao = $item.find(".acoes-produto .botao");
+      var $nome = $item.find(".nome-produto");
+
+      if ($botao.length && $nome.length) {
+
+          // evita duplicar
+          if ($item.find(".comprar-whats").length) return;
+
+          var nomeProduto = $nome.text().trim();
+
+          var mensagem = `Olá, vi o ${nomeProduto} e gostaria de saber mais informações`;
+          var link = `https://wa.me/5511910330406?text=${encodeURIComponent(mensagem)}`;
+
+          $botao.after(`
+              <a class="comprar-whats" href="${link}" target="_blank">
+                  Ou compre pelo WhatsApp
+              </a>
+          `);
+      }
+
+  });
+
+});
  
 });
