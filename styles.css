@@ -5012,6 +5012,10 @@ li.logado-sair a {
         font-size: 16px;
     }
 
+    .pagina-produto .acoes-produto {
+        padding: 0 10px !important;
+    }
+
 }
 
 /* Ícones menu */
