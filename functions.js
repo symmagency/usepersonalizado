@@ -561,7 +561,7 @@ function initSlickSolitarios() {
           },
           {
             breakpoint: 480,
-            settings: { slidesToShow: 2 }
+            settings: { slidesToShow: 3 }
           }
         ]
       });
