@@ -894,7 +894,7 @@ $(window).on('load', function () {
       img: 'https://cdn.awsli.com.br/600x700/2959/2959406/produto/399631430/whatsapp-image-2026-03-19-at-23-27-00-4d9zljo1wq.jpeg'
     },
     {
-      id: 399631450,
+      id: 399631454,
       nome: 'Caixinha de Veludo Cabo Flor Vermelha',
       preco: 'R$ 49,00',
       img: 'https://cdn.awsli.com.br/300x300/2959/2959406/produto/399631454/caixinha-de-veludo-cabo-flor-vermelha-d416c5aa-i0zce64tmu.jpeg'
@@ -929,7 +929,7 @@ $(window).on('load', function () {
     html += `</div></div>`;
 
     $('.upsell-produtos').remove();
-    $('.tabela-carrinho').after(html);
+    $('.pagina-carrinho:not(.carrinho-checkout) .tabela-carrinho').after(html);
     $('.append-upsell-produtos').slick({
       slidesToShow: 3,
       slidesToScroll: 1,
