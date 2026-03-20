@@ -809,6 +809,7 @@ ul.drop-login li:last-child {
 .menu.superior {
     margin: 0;
     background: none;
+    overflow-x: auto;
 }
 
 
@@ -845,6 +846,7 @@ ul.drop-login li:last-child {
     display: flex;
     justify-content: center;
     gap: 20px;
+    width: fit-content;
 }
 
 .menu.superior .nivel-dois {
