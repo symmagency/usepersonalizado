@@ -809,6 +809,8 @@ ul.drop-login li:last-child {
 .menu.superior {
     margin: 0;
     background: none;
+    display: flex;
+    justify-content: center;
 }
 
 
@@ -5904,4 +5906,12 @@ a.comprar-whats {
         position: sticky;
     }
 
+}
+
+@media screen and (min-width: 768px) and (max-width: 1366px) {
+	
+	.menu.superior .nivel-um > li:before {
+		display: none;
+	}
+	
 }
