@@ -5615,4 +5615,8 @@ li.logado-sair a {
         justify-content: center;
     }
 
+    .pagina-carrinho .acao-editar > .span12 a.botao {
+        display: none;
+    }
+
 }
