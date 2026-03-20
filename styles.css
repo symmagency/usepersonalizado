@@ -809,7 +809,6 @@ ul.drop-login li:last-child {
 .menu.superior {
     margin: 0;
     background: none;
-    overflow-x: auto;
 }
 
 
@@ -5643,11 +5642,17 @@ a.comprar-whats {
 }
 
 .upsell-produtos p {
-    font-size: 16px;
+    font-size: 14px;
     margin-top: 20px;
     height: 29px;
     color: #000;
     font-weight: 500;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 30px;
 }
 
 .upsell-produtos h3 {
