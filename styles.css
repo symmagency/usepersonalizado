@@ -1172,6 +1172,11 @@ div#miniBannerFullw {
     padding: 0 13px;
 }
 
+.bandeiras-produto {
+    top: 30px;
+    left: 30px;
+}
+
 /*.bandeiras-produto .bandeira-promocao:before {
     content: "-";
 } */
