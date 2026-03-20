@@ -1068,6 +1068,7 @@ $(document).ready(function () {
 });
 
 
+$(document).ready(function(){
   function initWhatsComprar() {
 
       // evita duplicar
@@ -1112,5 +1113,7 @@ $(document).ready(function () {
       childList: true,
       subtree: true
   });
+
+});
  
 });
