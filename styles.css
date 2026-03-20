@@ -4947,14 +4947,27 @@ li.logado-sair a {
     
     .cn-persolinacao .cn-aneis {
         flex-direction: row!important;
+        gap: 4px;
+        padding: 0 10px;
+    }
+
+    .cn-persolinacao .anel-masculino ul li, .cn-persolinacao .anel-solitario ul li, .cn-persolinacao .anel-feminino ul li {
+        width: 28px !important;
+        height: 28px !important;
+        font-size: 14px;
     }
     
     .cn-persolinacao .anel-masculino ul, .cn-persolinacao .anel-solitario ul, .cn-persolinacao .anel-feminino ul {
-        grid-template-columns: repeat(3, 36px) !important;
+        grid-template-columns: repeat(4, 28px) !important;
     }
     
     .cn-persolinacao .anel-masculino h3, .cn-persolinacao .anel-feminino h3, .cn-persolinacao .anel-capa h3, .cn-persolinacao .cn-porta-joias h3 {
-        font-size: 16px;
+        font-size: 14px;
+    }
+
+    .cn-preco {
+        justify-content: center;
+        align-items: center;
     }
     
     .cn-persolinacao .anel-masculino, .cn-persolinacao .anel-feminino, .cn-persolinacao .anel-capa, .cn-persolinacao .cn-porta-joias {
