@@ -5592,6 +5592,7 @@ li.logado-sair a {
 
     .upsell-produtos h3 {
         font-size: 18px;
+        font-weight: 600;
     }
 
     .upsell-produtos a {
@@ -5603,6 +5604,15 @@ li.logado-sair a {
         justify-content: center;
         align-items: center;
         gap: 10px;
+        flex-direction: column;
+    }
+
+    #rodape>div:last-child .conteiner .row-fluid p {
+        text-align: center;
+    }
+
+    #rodape>div:last-child .conteiner .assinatura-rodape {
+        justify-content: center;
     }
 
 }
