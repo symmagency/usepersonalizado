@@ -883,25 +883,25 @@ $(window).on('load', function () {
       id: 399631453,
       nome: 'Caixinha de Veludo Flor Vermelha',
       preco: 'R$ 49,00',
-      img: 'https://cdn.awsli.com.br/200x200/2959/2959406/produto/399631453/caixinha-de-veludo-flor-vermelha-16b1341d-ykxj6hndq6.jpeg'
+      img: 'https://cdn.awsli.com.br/300x300/2959/2959406/produto/399631453/caixinha-de-veludo-flor-vermelha-16b1341d-ykxj6hndq6.jpeg'
     },
     {
       id: 399631451,
       nome: 'Caixinha de Veludo Preta',
       preco: 'R$ 15,99',
-      img: 'https://cdn.awsli.com.br/200x200/2959/2959406/produto/399631451/caixinha-de-veludo-preta-0426b14a-qjkedp64g4.jpeg'
+      img: 'https://cdn.awsli.com.br/300x300/2959/2959406/produto/399631451/caixinha-de-veludo-preta-0426b14a-qjkedp64g4.jpeg'
     },
     {
       id: 399631450,
       nome: 'Caixinha de Veludo Vermelha',
       preco: 'R$ 15,99',
-      img: 'https://cdn.awsli.com.br/200x200/2959/2959406/produto/399631450/caixinha-de-veludo-vermelha-d5824012-tpp3jffqd2.jpeg'
+      img: 'https://cdn.awsli.com.br/300x300/2959/2959406/produto/399631450/caixinha-de-veludo-vermelha-d5824012-tpp3jffqd2.jpeg'
     }
   ];
 
   function renderProdutos() {
     let html = `<div class="upsell-produtos" style="margin-top:30px;">
-      <h3>Combina com sua compra</h3>
+      <h3>Combina com sua compra <span style="display: block; font-size: 14px; font-weight: 500;">Outros clientes também levaram</span></h3>
       <div class="append-upsell-produtos" style="display:flex;gap:20px;">`;
 
     produtos.forEach(prod => {

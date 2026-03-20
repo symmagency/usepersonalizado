@@ -5474,25 +5474,70 @@ li.logado-sair a {
 }
 
 .upsell-produtos p {
-    font-size: 14px;
-    margin-top: 10px;
+    font-size: 16px;
+    margin-top: 20px;
     height: 29px;
+    color: #000;
+    font-weight: 500;
 }
 
 .upsell-produtos h3 {
     text-align: center;
+    color: #000;
 }
 
 .upsell-produtos strong {
-    font-size: 16px;
+    font-size: 20px;
     color: #000;
 }
 
 .upsell-produtos a {
     font-size: 14px;
     width: 70%;
+    border-radius: 5px;
+    height: 40px;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    box-sizing: border-box;
+    font-weight: bold;
 }
 
 .upsell-produtos > div {
     justify-content: center;
+}
+
+@media screen and (max-width: 768px) {
+
+    .upsell-produtos .slick-prev {
+        position: absolute !important;
+        left: -20px !important;
+        z-index: 100 !important;
+        background: url(https://cdn.awsli.com.br/2959/2959406/arquivos/chevron-left.svg) center no-repeat;
+        height: 40px;
+        font-size: 0;
+        width: 40px;
+        background-color: #fff;
+        border-radius: 50px;
+        border: 1px solid #d8d8d8;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    
+    .upsell-produtos .slick-next {
+        position: absolute !important;
+        right: -20px !important;
+        z-index: 100 !important;
+        background: url(https://cdn.awsli.com.br/2959/2959406/arquivos/chevron-right.svg) center no-repeat;
+        height: 40px;
+        font-size: 0;
+        width: 40px;
+        background-color: #fff;
+        border-radius: 50px;
+        border: 1px solid #d8d8d8;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
 }
