@@ -4990,6 +4990,7 @@ li.logado-sair a {
     
     .cn-persolinacao .anel-masculino h3, .cn-persolinacao .anel-feminino h3, .cn-persolinacao .anel-capa h3, .cn-persolinacao .cn-porta-joias h3 {
         font-size: 14px;
+        height: 29px;
     }
 
     .cn-preco {
