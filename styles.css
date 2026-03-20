@@ -3558,7 +3558,7 @@ font-weight: bold;
         width: 200px!important;
     }
     
-    .slick-track {
+    .upsell-produtos .slick-track {
         width: fit-content !important;
         gap: 20px;
         display: flex;
