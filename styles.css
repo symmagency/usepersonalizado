@@ -5826,4 +5826,9 @@ a.comprar-whats {
         display: none;
     }
 
+    .produto .conteiner-imagem {
+        top: 170px;
+        position: sticky;
+    }
+
 }
