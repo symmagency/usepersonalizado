@@ -1097,7 +1097,14 @@ ul.drop-login li:last-child {
 /* Listagem */
 
 .listagem .span3 .imagem-produto, .listagem .produtos-carrossel[data-produtos-linha="4"] .imagem-produto {
-    height: 300px;
+    height: fit-content;
+    width: 100%;
+}
+
+.listagem .imagem-produto img {
+    width: 100%;
+    height: fit-content;
+    position: relative;
 }
 
 .listagem .preco-produto .preco-a-partir strong {
@@ -4783,10 +4790,6 @@ li.logado-sair a {
 }
 
 /* Imagens produto e vimeo */
-
-.listagem .span3 .imagem-produto, .listagem .produtos-carrossel[data-produtos-linha="4"] .imagem-produto {
-    height: 400px;
-}
 
 .produto .principal strong.preco-promocional.cor-principal.titulo {
     font-size: 40px;
