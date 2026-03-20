@@ -1411,7 +1411,7 @@ div#categoriasListagem {
 .listagem .titulo-categoria, #categoriasListagem .titulo-categoria {
     text-align: center;
     display: block;
-    margin-top: 70px!important;
+    margin-top: 20px!important;
     border: 0;
 }
 
@@ -5225,6 +5225,12 @@ a.comprar-whats {
 
 .menu.superior .nivel-um > .categoria-id-24188153:before {
     background: url(https://cdn.awsli.com.br/2959/2959406/arquivos/alianca-namoro.png);
+}
+
+/* Alianca envio rapido */
+
+.menu.superior .nivel-um > .categoria-id-24191290:before {
+    background: url(https://cdn.awsli.com.br/2959/2959406/arquivos/alianca-envio.png) center no-repeat;
 }
 
 .menu.superior > .nivel-um > li {
