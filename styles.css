@@ -2304,6 +2304,7 @@ div#blank-product-position1+.abas-custom:before {
 
 .menu.lateral.outras li .titulo {
     font-size: 16px;
+    margin: 0;
 }
 
 .menu.lateral .ativo .titulo {
@@ -2406,6 +2407,11 @@ div#blank-product-position1+.abas-custom:before {
 .coluna .newsletter.componente .texto-newsletter.newsletter-cadastro {
     color: #fff;
     font-size: 14px;
+}
+
+.coluna .menu.lateral, .coluna .filtro {
+    padding: 20px;
+    border: 1px solid #d8d8d8;
 }
 
 .coluna .newsletter .botao {
