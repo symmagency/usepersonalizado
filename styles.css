@@ -5047,14 +5047,14 @@ li.logado-sair a {
 
 /* Personalizado */
 
-.menu.superior .nivel-um > .categoria-id-24171811:before {
+.menu.superior .nivel-um > .categoria-id-24188060:before {
     background: url(https://cdn.awsli.com.br/2959/2959406/arquivos/personalizado.png);
 }
 
 /* Joias masculinas */
 
 .menu.superior .nivel-um > .categoria-id-24188149:before {
-    background: url(https://cdn.awsli.com.br/2959/2959406/arquivos/joia-masculina.png);
+    background: url(https://cdn.awsli.com.br/2959/2959406/arquivos/joia-masculina.png) center no-repeat;
 }
 
 /* Alianca moeda */
