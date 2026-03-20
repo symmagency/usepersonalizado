@@ -3549,6 +3549,10 @@ font-weight: bold;
         padding: 6px;
         height: 120px !important;
     }
+
+    .cn-persolinacao .cn-solitario ul li img {
+        width: 100%;
+    }
     
     .menu.superior li.logado {
         display: none !important;
