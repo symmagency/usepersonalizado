@@ -3626,6 +3626,10 @@ font-weight: bold;
     gap: 10px;
 }
 
+.pagina-carrinho .conteiner-principal .conteiner {
+    padding: 20px;
+}
+
 .cep label {
     text-align: center;
 }
