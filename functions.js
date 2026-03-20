@@ -950,6 +950,8 @@ $(window).on('load', function () {
   renderProdutos();
 });
 
+
+
 // GUIA DE MEDIDAS
 $(document).ready(function () {
 
@@ -1064,5 +1066,9 @@ $(document).ready(function () {
   }
 
 });
+
+if ($(".produto .principal .cn-comprar").length) {
+  $('.cn-comprar').after('<a class="comprar-whats" href="https://wa.me/5511910330406">Ou se preferir compre pelo WhatsApp</a>');
+}
  
 });

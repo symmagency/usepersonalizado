@@ -4968,15 +4968,37 @@ li.logado-sair a {
     position: relative;
 }
 
+.cn-comprar:after {
+    content: "Compra 100% segura";
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 12px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
 .cn-comprar button {
     display: flex!important;
     align-items: center!important;
     justify-content: center!important;
     gap: 20px!important;
+    padding-bottom: 10px;
 }
 
 .cn-comprar {
-    background-color: #e42f2f!important;
+    background-color: #4eaf51!important;
+}
+
+a.comprar-whats {
+    border: 1px solid #4eaf51;
+    width: 100%;
+    display: block;
+    margin-top: 10px;
+    padding: 14px 20px;
+    box-sizing: border-box;
+    color: #4eaf51;
+    font-weight: 600;
 }
 
 .cn-solitario .slick-track:before,
@@ -5203,6 +5225,10 @@ li.logado-sair a {
   font-size: 24px;
   margin-bottom: 20px;
   color: #000;
+}
+
+#descricao * {
+    font-size: 14px !important;
 }
 
 .grid-guia {
