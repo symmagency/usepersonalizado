@@ -4927,6 +4927,7 @@ li.logado-sair a {
 
 .cn-persolinacao .cn-solitario {
     min-height: fit-content !important;
+    padding: 12px;
 }
 
 .slick-solitarios .slick-list.draggable {
@@ -4999,6 +5000,7 @@ li.logado-sair a {
 
 .cn-comprar {
     background-color: #4eaf51!important;
+    position: relative;
 }
 
 a.comprar-whats {
@@ -5020,6 +5022,13 @@ a.comprar-whats {
 .cn-solitario .slick-track {
     display: flex;
     gap: 0px;
+}
+
+.cn-persolinacao .cn-solitario h3 {
+    font-size: 15px;
+    font-weight: normal;
+    color: #000;
+    line-height: 100%;
 }
 
 @media screen and (max-width: 768px) {
