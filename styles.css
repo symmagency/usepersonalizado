@@ -2241,7 +2241,12 @@ div#blank-product-position1+.abas-custom:before {
 }
 
 .pagina-categoria .listagem .listagem-item {
-    padding: 40px 0px 20px;
+    padding: 0;
+}
+
+.pagina-categoria .bandeiras-produto {
+    top: 10px;
+    left: 10px;
 }
 
 .pagina-categoria .listagem .span3 .imagem-produto, .pagina-categoria .listagem .produtos-carrossel[data-produtos-linha="4"] .imagem-produto {
@@ -3605,6 +3610,21 @@ font-weight: bold;
 
 /* MENU LOJA.LI */
 @media screen and (min-width: 768px) {
+
+    .pagina-categoria .conteiner-principal .conteiner, .pagina-busca .conteiner-principal .conteiner {
+        padding: 20px;
+    }
+    
+    .pagina-categoria .listagem .listagem-linha>ul, .pagina-busca .listagem .listagem-linha>ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+    
+    .pagina-categoria .listagem .listagem-linha>ul:after, .pagina-categoria .listagem .listagem-linha>ul:before,
+    .pagina-busca .listagem .listagem-linha>ul:after, .pagina-busca .listagem .listagem-linha>ul:before {
+        display: none;
+    }
 
     .cn-persolinacao .cn-solitario .slick-track .slick-slide {
         padding: 6px;
