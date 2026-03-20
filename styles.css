@@ -3556,6 +3556,16 @@ font-weight: bold;
 }
 
 @media screen and (max-width: 767px) {
+
+    .tabela-carrinho #formCalcularFrete .controls {display: flex;justify-content: center;align-items: center;gap: 10px;}
+
+.pagina-carrinho .total {
+    text-align: center;
+}
+
+.descontos.parcelas {
+    text-align: center;
+}
 .resumo-compra .tabela-carrinho .text-right {
     padding: 5px 20px !important;
 }
