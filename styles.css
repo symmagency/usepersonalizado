@@ -4211,7 +4211,17 @@ li.logado-sair a {
 
 .pagina-inicial #corpo {
     margin-top: 0;
-    padding: 0 24px;
+    padding: 0 10px;
+}
+
+.bandeiras-produto {
+    top: 0;
+    left: 10px;
+}
+
+.bandeiras-produto .bandeira-promocao {
+    font-size: 12px;
+    height: 24px;
 }
 
 .depoimentos-video h2 {
