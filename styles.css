@@ -5439,3 +5439,37 @@ li.logado-sair a {
   margin-top: 10px;
   font-weight: bold;
 }
+
+/* CAIXINHAS DE BRINDE */
+
+.add-too-img {
+    max-height: 170px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.upsell-produtos p {
+    font-size: 14px;
+    margin-top: 10px;
+    height: 29px;
+}
+
+.upsell-produtos h3 {
+    text-align: center;
+}
+
+.upsell-produtos strong {
+    font-size: 16px;
+    color: #000;
+}
+
+.upsell-produtos a {
+    font-size: 14px;
+    width: 70%;
+}
+
+.upsell-produtos > div {
+    justify-content: center;
+}

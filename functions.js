@@ -872,6 +872,65 @@ $(window).on('load', function () {
     </section>
   `;
 
-  $('#corpo').after(htmlReviews);
+  $('.pagina-inicial #corpo').after(htmlReviews);
+
+  // CAIXINHAS DE BRINDE
+
+  $(window).on('load', function () {
+
+  const produtos = [
+    {
+      id: 399631453,
+      nome: 'Caixinha de Veludo Flor Vermelha',
+      preco: 'R$ 49,00',
+      img: 'https://cdn.awsli.com.br/200x200/2959/2959406/produto/399631453/caixinha-de-veludo-flor-vermelha-16b1341d-ykxj6hndq6.jpeg'
+    },
+    {
+      id: 399631451,
+      nome: 'Caixinha de Veludo Preta',
+      preco: 'R$ 15,99',
+      img: 'https://cdn.awsli.com.br/200x200/2959/2959406/produto/399631451/caixinha-de-veludo-preta-0426b14a-qjkedp64g4.jpeg'
+    },
+    {
+      id: 399631450,
+      nome: 'Caixinha de Veludo Vermelha',
+      preco: 'R$ 15,99',
+      img: 'https://cdn.awsli.com.br/200x200/2959/2959406/produto/399631450/caixinha-de-veludo-vermelha-d5824012-tpp3jffqd2.jpeg'
+    }
+  ];
+
+  function renderProdutos() {
+    let html = `<div class="upsell-produtos" style="margin-top:30px;">
+      <h3>Combina com sua compra</h3>
+      <div style="display:flex;gap:20px;">`;
+
+    produtos.forEach(prod => {
+      const existeNoCarrinho = $(`.tabela-carrinho tr[data-produto-id="${prod.id}"]`).length > 0;
+
+      if (!existeNoCarrinho) {
+        const link = `https://gabriela-fernanda.lojaintegrada.com.br/carrinho/produto/${prod.id}/adicionar`;
+
+        html += `
+          <div style="border:1px solid #eee;padding:15px;width:200px;text-align:center;">
+          	<div class="add-too-img">
+            	<img src="${prod.img}" style="width:100%;height:auto;">
+            </div>
+            <p>${prod.nome}</p>
+            <strong>${prod.preco}</strong>
+            <br><br>
+            <a href="${link}" style="background:#000;color:#fff;padding:8px 12px;display:inline-block;">Adicionar</a>
+          </div>
+        `;
+      }
+    });
+
+    html += `</div></div>`;
+
+    $('.upsell-produtos').remove();
+    $('.tabela-carrinho').after(html);
+  }
+
+  renderProdutos();
+});
  
 });
