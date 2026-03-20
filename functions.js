@@ -1067,8 +1067,50 @@ $(document).ready(function () {
 
 });
 
-if ($(".produto .principal .cn-comprar").length) {
-  $('.cn-comprar').after('<a class="comprar-whats" href="https://wa.me/5511910330406">Ou se preferir compre pelo WhatsApp</a>');
-}
+
+  function initWhatsComprar() {
+
+      // evita duplicar
+      if ($(".comprar-whats").length) return;
+
+      var $btn = $(".produto .principal .cn-comprar");
+      var $nomeProduto = $(".produto .principal .nome-produto");
+
+      if ($btn.length && $nomeProduto.length) {
+
+          var ativo = $btn.is(":visible") &&
+                      !$btn.prop("disabled") &&
+                      !$btn.hasClass("disabled");
+
+          if (ativo) {
+
+              var nome = $nomeProduto.text().trim();
+
+              var mensagem = `Olá, vi o ${nome} e gostaria de saber mais informações.`;
+              var mensagemUrl = encodeURIComponent(mensagem);
+
+              var link = `https://wa.me/5511910330406?text=${mensagemUrl}`;
+
+              $btn.after(`
+                  <a class="comprar-whats" href="${link}" target="_blank">
+                      Ou se preferir compre pelo WhatsApp
+                  </a>
+              `);
+          }
+      }
+  }
+
+  // inicia
+  initWhatsComprar();
+
+  // observa mudanças (ajax)
+  const observer = new MutationObserver(function () {
+      initWhatsComprar();
+  });
+
+  observer.observe(document.body, {
+      childList: true,
+      subtree: true
+  });
  
 });
