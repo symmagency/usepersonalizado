@@ -947,5 +947,120 @@ $(window).on('load', function () {
 
   renderProdutos();
 });
+
+// GUIA DE MEDIDAS
+$(document).ready(function () {
+
+  function initTabelaMedidas() {
+
+      // evita duplicar
+      if ($("#btn-tabela-medidas").length) return;
+
+      if ($(".produto .principal .cn-comprar").length) {
+
+          // adiciona botão
+          $(".produto .principal .cn-comprar").after(`
+              <button id="btn-tabela-medidas" class="btn-medidas">
+                  Guia de medidas
+              </button>
+          `);
+
+          // adiciona modal (uma única vez)
+          if (!$("#modal-medidas").length) {
+              $("body").append(`
+                  <div id="modal-medidas" class="modal-medidas">
+                      <div class="modal-content">
+                          <span class="close-modal">&times;</span>
+                          <h2>Tabela de Medidas</h2>
+
+                          <table class="tabela-medidas">
+                              <thead>
+                                  <tr>
+                                      <th>NUMERAÇÃO</th>
+                                      <th>DIÂMETRO (MM)</th>
+                                      <th>CIRCUNF. (CM)</th>
+                                  </tr>
+                              </thead>
+                              <tbody>
+                                  ${gerarTabela()}
+                              </tbody>
+                          </table>
+                      </div>
+                  </div>
+              `);
+          }
+      }
+  }
+
+  // tenta iniciar imediatamente
+  initTabelaMedidas();
+
+  // observa mudanças (caso carregue via ajax)
+  const observer = new MutationObserver(function () {
+      initTabelaMedidas();
+  });
+
+  observer.observe(document.body, {
+      childList: true,
+      subtree: true
+  });
+
+  // eventos
+  $(document).on("click", "#btn-tabela-medidas", function () {
+      $("#modal-medidas").fadeIn();
+  });
+
+  $(document).on("click", ".close-modal", function () {
+      $("#modal-medidas").fadeOut();
+  });
+
+  $(window).on("click", function (e) {
+      if ($(e.target).is("#modal-medidas")) {
+          $("#modal-medidas").fadeOut();
+      }
+  });
+
+  // função tabela
+  function gerarTabela() {
+      const dados = [
+          [10, "15,00", "4,71"],
+          [11, "15,30", "4,81"],
+          [12, "15,70", "4,93"],
+          [13, "16,00", "5,03"],
+          [14, "16,30", "5,12"],
+          [15, "16,60", "5,21"],
+          [16, "16,90", "5,31"],
+          [17, "17,30", "5,44"],
+          [18, "17,60", "5,53"],
+          [19, "18,00", "5,65"],
+          [20, "18,30", "5,75"],
+          [21, "18,60", "5,84"],
+          [22, "18,90", "5,94"],
+          [23, "19,20", "6,03"],
+          [24, "19,60", "6,16"],
+          [25, "20,00", "6,28"],
+          [26, "20,30", "6,38"],
+          [27, "20,60", "6,47"],
+          [28, "20,90", "6,57"],
+          [29, "21,30", "6,69"],
+          [30, "21,60", "6,78"]
+      ];
+
+      let html = "";
+
+      dados.forEach((item, index) => {
+          html += `
+              <tr class="${index % 2 === 0 ? 'linha-par' : ''}">
+                  <td>${item[0]}</td>
+                  <td>${item[1]}</td>
+                  <td>${item[2]}</td>
+              </tr>
+          `;
+      });
+
+      return html;
+  }
+
+});
  
 });
