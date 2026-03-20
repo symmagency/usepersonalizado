@@ -251,7 +251,7 @@ $(document).ready(function(){
     $('.parcelas-produto .accordion .accordion-group:first-child .accordion-body').removeClass('in');
     
     
-    $('#rodape > div:last-child .row-fluid > div:last-child a').before('<a href="https://www.tihgo.com.br/" class="tihgo-agencia" target="_blank"><img src="https://cdn.awsli.com.br/1994/1994497/arquivos/tihgo-logo.png" alt="Tihgo Agência"></a>');
+    $('#rodape > div:last-child .row-fluid > div:last-child a').before('<a href="https://wa.me/5511939593709" class="tihgo-agencia" target="_blank"><img src="https://cdn.awsli.com.br/2959/2959406/arquivos/desenvolvido-symm.svg" alt="Symm Agência"></a>');
     $('#rodape > div:last-child .row-fluid > div:first-child').removeClass('span9 span6 atendimento').addClass('assinatura').attr('style', '');
     $('#rodape > div:last-child .row-fluid > div:last-child').attr('style', '').addClass('assinatura-rodape');
    
