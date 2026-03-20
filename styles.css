@@ -3553,6 +3553,16 @@ font-weight: bold;
         display: none !important;
         
     }
+
+    .upsell-produtos .slick-slide {
+        width: 200px!important;
+    }
+    
+    .slick-track {
+        width: fit-content !important;
+        gap: 20px;
+        display: flex;
+    }
 }
 
 @media screen and (max-width: 767px) {
