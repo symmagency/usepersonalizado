@@ -3591,6 +3591,14 @@ font-weight: bold;
     width: 23.076923076923077%;
 }
 
+.pagina-categoria .listagem .listagem-item:hover .imagem-produto.has-zoom .imagem-principal {
+    opacity: 1;
+}
+
+#cn-stories {
+    max-width: 100%;
+}
+
 /* MENU LOJA.LI */
 @media screen and (min-width: 768px) {
 
