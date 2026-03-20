@@ -5786,3 +5786,44 @@ a.comprar-whats {
     font-weight: 600;
     color: #000;
 }
+
+/* AJUSTES DA PDP */
+
+@media screen and (min-width: 768px) {
+
+
+    .produto > .row-fluid:first-child {
+        display: flex;
+        gap: 40px;
+    }
+    
+    .produto>.row-fluid:first-child > div {
+        flex: 1;
+    }
+    
+    .pagina-produto.fpp .principal {
+        right: 0;
+        width: 100% !important;
+    }
+    
+    .pagina-produto .produto > .row-fluid > .span5 {
+        max-width: 40%;
+        margin-left: auto !important;
+    }
+    
+    .cn-persolinacao {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .fixo-esquerda {
+        position: relative!important;
+        top: auto!important;
+        width: 60% !important;
+    }
+    
+    .produto > .row-fluid:first-child:before, .produto > .row-fluid:first-child:after {
+        display: none;
+    }
+
+}
