@@ -3802,7 +3802,7 @@ font-weight: bold;
     padding: 0 20px;
 }
 
-.pagina-carrinho .acao-editar {
+.pagina-carrinho:not(.carrinho-checkout) .acao-editar {
     position: fixed;
     bottom: 0;
     left: 0;
