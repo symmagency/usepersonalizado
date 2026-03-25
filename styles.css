@@ -5955,6 +5955,21 @@ a.comprar-whats {
         position: sticky;
     }
 
+    .pagina-carrinho:not(.carrinho-checkout) .acao-editar {
+        position: fixed;
+        bottom: 0;
+        left: auto;
+        right: auto;
+        z-index: 100000000;
+        padding: 20px 30px;
+        display: flex!important;
+        width: 100%;
+        box-sizing: border-box;
+        background: #fff;
+        box-shadow: 0 0 30px rgba(0,0,0,.3);
+        max-width: 1300px;
+    }
+
 }
 
 @media screen and (min-width: 768px) and (max-width: 1366px) {
