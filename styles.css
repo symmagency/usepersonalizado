@@ -1109,6 +1109,7 @@ ul.drop-login li:last-child {
     height: fit-content;
     position: relative;
     border-radius: 10px;
+    max-height: fit-content;
 }
 
 .listagem .preco-produto .preco-a-partir strong {
@@ -4625,6 +4626,7 @@ div#blank-product-position1+.abas-custom:before {
 .listagem .listagem-item .imagem-produto, .listagem .listagem-item .info-produto {
     float: left;
     width: 100%;
+    height: fit-content;
 }
 
 .pagina-inicial #barraNewsletter.posicao-rodape {

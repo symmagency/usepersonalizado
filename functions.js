@@ -501,7 +501,7 @@ $(document).ready(function(){
         📍 INSERE NO DOM
      ==========================*/
    
-       $('.pagina-inicial .vitrine-24188163+ul').after(htmlSlider);
+       $('.pagina-inicial .vitrine-24188153+ul').after(htmlSlider);
    
        /* =========================
         🎯 INICIA SLICK
