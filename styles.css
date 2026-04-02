@@ -4639,6 +4639,10 @@ div#blank-product-position1+.abas-custom:before {
     width: fit-content;
 }
 
+.pagina-categoria .listagem .span3 .imagem-produto, .pagina-categoria .listagem .produtos-carrossel[data-produtos-linha="4"] .imagem-produto {
+    height: 190px;
+}
+
 .pagina-inicial #barraNewsletter.posicao-rodape {
     display: block!important;
     margin: 0;
