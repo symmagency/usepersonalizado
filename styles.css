@@ -1109,7 +1109,7 @@ ul.drop-login li:last-child {
     height: fit-content;
     position: relative;
     border-radius: 10px;
-    max-height: fit-content;
+    max-height: 100%;
 }
 
 .listagem .preco-produto .preco-a-partir strong {
@@ -2238,7 +2238,7 @@ div#blank-product-position1+.abas-custom:before {
 }
 
 .pagina-categoria .listagem .span4 .imagem-produto, .pagina-categoria .listagem .produtos-carrossel[data-produtos-linha="3"] .imagem-produto {
-    height: 310px;
+    height: fit-content;
 }
 
 .pagina-categoria .listagem .listagem-item {
@@ -2251,7 +2251,7 @@ div#blank-product-position1+.abas-custom:before {
 }
 
 .pagina-categoria .listagem .span3 .imagem-produto, .pagina-categoria .listagem .produtos-carrossel[data-produtos-linha="4"] .imagem-produto {
-    height: 190px;
+    height: fit-content;
 }
 
 .breadcrumbs h1 {
