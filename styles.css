@@ -1109,7 +1109,7 @@ ul.drop-login li:last-child {
     height: fit-content;
     position: relative;
     border-radius: 10px;
-    max-height: 100%;
+    max-height: none;
 }
 
 .listagem .preco-produto .preco-a-partir strong {
