@@ -5995,3 +5995,13 @@ a.comprar-whats {
 	}
 	
 }
+
+/* Altera cor do input */
+
+.cn-persolinacao .anel-masculino input[type=text], .cn-persolinacao .anel-feminino input[type=text] {
+    border: 1px solid #000;
+}
+
+.cn-persolinacao .anel-masculino input[type=text]::placeholder, .cn-persolinacao .anel-feminino input[type=text]::placeholder {
+    color: #000;
+}
